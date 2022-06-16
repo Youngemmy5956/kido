@@ -92,10 +92,10 @@ class DashboardController extends Controller
         if($addr){
             $address = Address::where('user_id',$request->id)->update(['address'=> $request->address]);
 
-            return response()->json("true");
+            return response()->json(["status" => 200,"data" => $request->address]);
         }else{
             $address = Address::create(['user_id'=> $request->id,'address'=> $request->address]);
-            return response()->json("true");
+            return response()->json(["status" => 200,"data" => $request->address]);
         }
     }
 

@@ -68,12 +68,12 @@
                 <span class="fa-solid fa-x wterminate"></span>
             </div>
             <button class="bg-green-600 px-4 py-2 ml-4 mb-2 text-white awallet">+ add wallet</button>
-            <p class="ml-4"><span class="font-bold">Recipient Wallet: </span>{{ $address->address ?? " Not Avvailable"}}</p>
+            <p class="ml-4"><span class="font-bold">Recipient Wallet: </span><span class="addr">{{ $address->address ?? " Not Avvailable"}}</span></p>
             <div class="space-y-4">
                 <div class="hidden showwallet">
                 <input type="text" name="waddress" placeholder="Enter Wallet Address" class="address mt-3 p-2 w-9/12 ml-4 focus:outline-none border"><button class="bg-green-600 p-2 text-white add">{{ $address->address ? 'Update':'Add' }}</button>
                 </div>
-                <p class="text-green-600 errmsg"></p>
+                <p class="text-green-600 errmsg ml-4"></p>
                 <input type="number" name="waddress" placeholder="Enter Amount" class="p-2 w-11/12 ml-4 wamount focus:outline-none border">
                 <input type="hidden" class="user_id" value="{{ auth()->user()->id }}">
                 </div>
@@ -90,6 +90,9 @@
              let user_id = document.querySelector(".user_id");
              let wbtn = document.querySelector('.wbtn');
              let wamount = document.querySelector('.wamount');
+             let err = document.querySelector(".errmsg");
+             let addr = document.querySelector(".addr");
+
 
 
 
@@ -110,7 +113,13 @@
                         Accept:'application/json',
                     },
                     body:formdata
-                }).then((res) => res.json()).then((val) => console.log(val));
+                }).then((res) => res.json()).then((val) => {
+                    if(val.status === 200){
+                        err.innerHTML = 'added successfully'
+                        addr.innerHTML = val.data;
+                    }
+                    
+                });
             });
 
             awallet.addEventListener("click",function(){
