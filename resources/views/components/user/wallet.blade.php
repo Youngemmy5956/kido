@@ -2,7 +2,7 @@
 
     @props(['approve','address'])
 
-    <div class="hidden depoContent absolute bg-black top-0 left-0 right-0 bottom-0 bg-opacity-50 p-4 w-full h-full">
+    <div class="hidden depoContent absolute bg-black top-0 left-0 right-0 bottom-0 bg-opacity-50 p-4 w-full h-full" draggable="true">
             <div class="mx-auto container md:w-6/12 w-10/12 bg-white h-6/12 mt-20 p-2">
 
             <div class="flex justify-between items-center mx-4 my-6 border-b-2 border-b-green-400">
@@ -77,11 +77,26 @@
                 <input type="number" name="waddress" placeholder="Enter Amount" class="p-2 w-11/12 ml-4 wamount focus:outline-none border">
                 <input type="hidden" class="user_id" value="{{ auth()->user()->id }}">
                 </div>
-           <button class="w-full bg-green-400 py-4 wbtn mt-2">Withdraw</button>
+           <button class="w-full bg-green-400 py-4 wbtn mt-2 with">Withdraw</button>
             </div>
         </div>  
 
-        <script>
+                  
+
+    <section>
+        <div class="flex flex-col justify-center items-center w-full bg-green-500 pb-10 space-y-6">
+            <p class="text-white">Your Balance </p>
+            <p class="font-bold text-2xl">USDT <span class="user_amount">{{ auth('web')->user()->wallet->amount }}</span> </p>
+            <div class="flex space-x-3">
+                <a href="#" class="bg-white md:px-8 px-4 py-2 deposite"><span class="fa fa-credit-card mx-2"></span>Deposit</a>
+                
+                <!-- <a href="#" class="bg-white md:px-8 px-4 py-2"><span class="fa-brands fa-btc mx-2"></span>Buy / Sell</a> -->
+                <a href="#" class="bg-white md:px-8 px-4 py-2 withdraw"><span class="fa fa-bank mx-2"></span>Withdraw</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
 
             let awallet = document.querySelector(".awallet")
             let address = document.querySelector(".address")
@@ -92,6 +107,8 @@
              let wamount = document.querySelector('.wamount');
              let err = document.querySelector(".errmsg");
              let addr = document.querySelector(".addr");
+             let withdraw = document.querySelector(".with");
+              let amount = document.querySelector(".user_amount");
 
 
 
@@ -128,23 +145,17 @@
 
             // withdrawal
 
-            wbtn.addEventListener('click',function(e){
-                console.log(wamount.value);
+            withdraw.addEventListener('click',function(e){
+
+                if(wamount.value > Number.parseFloat(amount.textContent)){
+                    err.textContent = "Insufficient Fund";
+                }else{
+                    if(/[1-9]/.test(wamount.value)){
+                        return err.textContent = "Invalid value entered";
+                    }
+                    err.textContent = "Withdrawal request sent successfully"
+                }
+
             })
 
         </script>
-
-                  
-
-    <section>
-        <div class="flex flex-col justify-center items-center w-full bg-green-500 pb-10 space-y-6">
-            <p class="text-white">Your Balance </p>
-            <p class="font-bold text-2xl">USDT {{ auth('web')->user()->wallet->amount }} </p>
-            <div class="flex space-x-3">
-                <a href="#" class="bg-white md:px-8 px-4 py-2 deposite"><span class="fa fa-credit-card mx-2"></span>Deposit</a>
-                
-                <!-- <a href="#" class="bg-white md:px-8 px-4 py-2"><span class="fa-brands fa-btc mx-2"></span>Buy / Sell</a> -->
-                <a href="#" class="bg-white md:px-8 px-4 py-2 withdraw"><span class="fa fa-bank mx-2"></span>Withdraw</a>
-            </div>
-        </div>
-    </section>
