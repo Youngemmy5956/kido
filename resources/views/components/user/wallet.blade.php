@@ -71,7 +71,7 @@
             <p class="ml-4"><span class="font-bold">Recipient Wallet: </span><span class="addr">{{ $address->address ?? " Not Avvailable"}}</span></p>
             <div class="space-y-4">
                 <div class="hidden showwallet">
-                <input type="text" name="waddress" placeholder="Enter Wallet Address" class="address mt-3 p-2 w-9/12 ml-4 focus:outline-none border"><button class="bg-green-600 p-2 text-white add">{{ $address->address ? 'Update':'Add' }}</button>
+                <input type="text" name="waddress" placeholder="Enter Wallet Address" class="address mt-3 p-2 w-9/12 ml-4 focus:outline-none border"><button class="bg-green-600 p-2 text-white add">{{ $address ? 'Update':'Add' }}</button>
                 </div>
                 <p class="text-green-600 errmsg ml-4"></p>
                 <input type="number" name="waddress" placeholder="Enter Amount" class="p-2 w-11/12 ml-4 wamount focus:outline-none border">
@@ -148,7 +148,7 @@
             withdraw.addEventListener('click',function(e){
 
                 if(wamount.value > Number.parseFloat(amount.textContent)){
-                    err.textContent = "Insufficient Fund";
+                    return err.textContent = "Insufficient Fund";
                 }else{
                     if(/[1-9]/.test(wamount.value)){
                         return err.textContent = "Invalid value entered";
