@@ -26,7 +26,6 @@
                     <li><a href="{{ route('admin.dashboard') }}">Users</a></li>
                     <li><a href="{{ route('admin.approve') }}">Payment Approvals</a></li>
                     <li><a href="{{ route('admin.package') }}">Packages</a></li>
-                    <li><a href="{{ route('admin.product') }}">Products</a></li>
                 </ul>
             </div>
            @yield("content")
