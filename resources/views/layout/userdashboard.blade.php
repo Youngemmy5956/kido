@@ -50,10 +50,10 @@
                 <a href="{{ route('setting') }}" class="block px-4 py-2"><span class="fa fa-cog mx-2"></span>Setting</a>
                 <form action="{{ route('logout') }}" method="post" class="inline px-4 py-2">
                         @csrf
-                    <span class="fa fa-sign-out mx-2"></span><input type="submit" name="submit" value="Logout">
-                    </form>
+                <span class="fa fa-sign-out mx-2"></span><input type="submit" name="submit" value="Logout">
+                </form>
            </div>
-        </div>
+    </div>
 
     @yield("wallet")
 

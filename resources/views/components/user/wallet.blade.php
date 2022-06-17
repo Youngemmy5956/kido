@@ -3,14 +3,14 @@
     @props(['approve','address'])
 
     <div class="hidden depoContent absolute bg-black top-0 left-0 right-0 bottom-0 bg-opacity-50 p-4 w-full h-full" draggable="true">
-            <div class="mx-auto container md:w-6/12 w-10/12 bg-white h-6/12 mt-20 p-2">
+        <div class="mx-auto container md:w-6/12 w-10/12 bg-white h-6/12 mt-20 p-2">
 
             <div class="flex justify-between items-center mx-4 my-6 border-b-2 border-b-green-400">
                 <p>Fund Account</p>
                 <span class="fa-solid fa-x terminate" onClick="terminate()"></span>
             </div>
 
-                <div class="flex flex-col mx-4">
+            <div class="flex flex-col mx-4">
                 <p class="text-green-700">Wallet-Address:</p>
                 <span class="inline-block text-green-700"></span>
                 <p class="text-gray-500 border md:w-7/12 w-full text">kkedcvjdkjhbvjkhbvjdjcbe7474jvjfv898ub <span class="fa-solid fa-copy md:ml-4 ml-1 copy"></span></p>
@@ -53,10 +53,9 @@
             <input type="text" placeholder="Transaction ID (Trxid)" name="transaction" class="w-full p-4 border mb-2 focus:outline-green-500 id">
             
             <button class="w-full bg-green-400 py-4 wallet">Deposite</button>
-            </div>
             @endif
-
-        </div>  
+        </div>
+    </div>  
 
     <!-- end of deposition panel -->
 
