@@ -9,10 +9,10 @@
      <link rel="stylesheet" href="{{ asset('asset/font/css/all.css') }}">
 </head>
 <body class="relative">
-    <nav class="bg-green-500 text-white">
+    <nav class="bg-blue-500 text-white">
         <div class="container mx-auto flex justify-between py-6 px-3">
             <div>
-                <a href="{{ route('index') }}" class="text-3xl font-bold">Bitool</a>
+                <a href="{{ route('index') }}"><img src="{{ asset('data/images/logo/1.png') }}" width="200" height="100"></a>
             </div>
             <div class="hidden md:block space-x-3 relative">
                 <a href="#" class="border-2 border-white px-4 py-2" onClick="logout()">{{ auth('web')->user()->first_name }}</a>
@@ -22,7 +22,7 @@
                         log.classList.toggle('hidden');
                     }
                 </script>
-                <div class="hidden left-0 absolute log bg-green-300 px-4 py-2 mt-2 text-black">
+                <div class="hidden left-0 absolute log bg-blue-300 px-4 py-2 mt-2 text-black">
                     <form action="{{ route('logout') }}" method="post" class="inline">
                         @csrf
                     <span class="fa fa-sign-out mx-2"></span><input type="submit" href="{{ route('logout') }}" value="Logout">
@@ -45,7 +45,7 @@
         </div>
     </nav>
      <div class="bars-data hidden ">
-           <div class="flex flex-col bg-green-300">
+           <div class="flex flex-col bg-blue-300">
                <a href="{{ route('setting') }}" class="block px-4 py-2"><span class="fa fa-user mx-2"></span>{{ auth('web')->user()->first_name }}</a>
                 <a href="{{ route('setting') }}" class="block px-4 py-2"><span class="fa fa-cog mx-2"></span>Setting</a>
                 <form action="{{ route('logout') }}" method="post" class="inline px-4 py-2">

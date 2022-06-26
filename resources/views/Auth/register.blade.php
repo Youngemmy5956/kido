@@ -11,8 +11,8 @@
 <body>
    <section class="w-full h-full">
        <div class="w-full flex flex-col items-center justify-center h-full mt-19 mb-4">
-             <p class="my-10 text-5xl text-bold">Bitool</p>
-            <div class="md:w-4/12 w-10/12 border border-green-500 h-full">
+             <img src="{{ asset('data/images/kl1.png') }}" class="my-10 text-5xl text-bold">
+            <div class="md:w-4/12 w-10/12 border border-blue-500 h-full">
                
                 <div class="mx-4 my-8 space-y-6">
                      <div class="text-center text-2xl">Create Account</div>
@@ -33,16 +33,16 @@
                     @error('email')
                         <p class="text-red-500">{{ $message }}</p>
                     @enderror
-                    <input type="email" name="email" value="{{ old('email') }}" class="block border w-full h-12 p-3 focus:border-green-500 focus:border-2" placeholder="Email">
+                    <input type="email" name="email" value="{{ old('email') }}" class="block border w-full h-12 p-3 focus:border-blue-500 focus:border-2" placeholder="Email">
                     @error('password')
                         <p class="text-red-500">{{ $message }}</p>
                     @enderror
-                    <input type="password" name="password" class="block border w-full h-12 p-3 focus:border-2 focus:border-green-500 " placeholder="Password">
+                    <input type="password" name="password" class="block border w-full h-12 p-3 focus:border-2 focus:border-blue-500 " placeholder="Password">
                     <input type="password" name="password_confirmation" class="block border w-full h-12 p-3 focus:border-2 focus:border-green-500 " placeholder="Confirm Password">
-                    <input type="submit" value="Sign in" class="bg-green-500 text-white w-full py-4 hover:bg-white hover:text-green-500 hover:border-2 hover:border-green-500">
+                    <input type="submit" value="Sign in" class="bg-blue-500 text-white w-full py-4 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-green-500">
                     
                 </form>
-                 <div class="text-center"><a href="{{ route('login') }}" class="text-green-500">Already have an account?</a></div>
+                 <div class="text-center"><a href="{{ route('login') }}" class="text-blue-500">Already have an account?</a></div>
                 </div>
                 
             </div>

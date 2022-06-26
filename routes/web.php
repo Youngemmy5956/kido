@@ -4,6 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\User\DashboardController;
+use App\Http\Controllers\Web\HomeController;
+use App\Http\Controllers\Web\AboutUsController;
+use App\Http\Controllers\Web\AboutBtcController;
+use App\Http\Controllers\Web\ContactController;
+use App\Http\Controllers\Web\WalletController;
+use App\Http\Controllers\Web\TeamController;
+use App\Http\Controllers\Web\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +23,17 @@ use App\Http\Controllers\User\DashboardController;
 |
 */
 
-Route::get('/', [PublicController::class,'index'])->name("index");
+// Route::get('/', [PublicController::class,'index'])->name("index");
+
+    Route::get('/', [HomeController::class, 'index'])->name('index');
+    Route::get('about-us', [AboutUsController::class, 'about'])->name('about');
+    Route::get('our-wallet', [WalletController::class, 'wallet'])->name('wallet');
+    Route::get('contact-us', [ContactController::class, 'contact'])->name('contact');
+    Route::get('our-team', [TeamController::class, 'team'])->name('team');
+    Route::get('about-btc', [AboutBtcController::class, 'about_btc'])->name('about_btc');
+    Route::get('our-service', [ServiceController::class, 'service'])->name('service');
+
+
 
 #User Authentification
 Route::get('/login',[PublicController::class,'login'])->name('login')->middleware('guest');
@@ -42,3 +59,4 @@ Route::get("/admin/package/",[AdminController::class,"package"])->name("admin.pa
 Route::get("/admin/product/",[AdminController::class,"product"])->name("admin.product");
 Route::post("/admin/product/",[AdminController::class,"store_product"])->name("admin.product");
 Route::post("/admin/package/create",[AdminController::class,"create_package"])->name("admin.create_package");
+Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");

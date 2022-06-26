@@ -61,4 +61,8 @@ class AdminController extends Controller
             return back()->with(['msg' => 'Oops something went wrong']);
         }
     }
+
+    public function register(){
+        return view("admin.register");
+    }
 }

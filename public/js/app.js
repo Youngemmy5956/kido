@@ -2074,20 +2074,20 @@ terminate.addEventListener("click", function () {
 deposite.addEventListener("click", function () {
   depoContent.classList.remove("hidden");
 });
-tab[0].classList.add("bg-green-500");
+tab[0].classList.add("bg-blue-500");
 tab[0].firstElementChild.classList.add("text-white");
 tabc[0].classList.remove("hidden");
 tab.forEach(function (val, index) {
   val.addEventListener("click", function () {
     tab.forEach(function (rec, index) {
-      rec.classList.remove("bg-green-500");
+      rec.classList.remove("bg-blue-500");
       rec.firstElementChild.classList.remove("text-white");
       tabc.forEach(function (data) {
         data.classList.add("hidden");
       });
     });
     tabc[index].classList.remove("hidden");
-    val.classList.add("bg-green-500");
+    val.classList.add("bg-blue-500");
     val.firstElementChild.classList.add("text-white");
   });
 }); // withdraw
