@@ -29,13 +29,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="{{route('index')}}">About Us</a>
+                            <a href="{{route('about')}}">About Us</a>
                         </li>
                         <li class="drop">
-                            <a href="{{route('index')}}">Service</a>
+                            <a href="{{route('service')}}">Service</a>
                             <ul class="dropdown">
                                 {{-- <li>
-                                    <a href="{{route('index')}}">Service Page</a>
+                                    <a href="{{route('service')}}">Service Page</a>
                                 </li> --}}
                                 {{-- <li>
                                     <a href="single-service.html">Single Service</a>
@@ -168,7 +168,7 @@
                     <li>
                         <a href="{{route('team')}}">Team</a>
                          <li>
-                            <a href="{{route('about_btc')}}">About Coin</a>
+                            <a href="{{route('about')}}">About Coin</a>
                         </li> 
                         <li>
                             <a href="{{route('wallet')}}">Wallet Page</a>
