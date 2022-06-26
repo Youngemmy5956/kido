@@ -10,13 +10,12 @@
                 <div class="content">
                     <h2>How It Works?</h2>
                     <h6>cryptocurrency is a digital asset designed to work as a medium of exchange</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.</p>
+                    <p>cryptocurrency is a digital asset designed to work as a medium of exchange
+                        Invest with us today and gain access to 10% investment profit and withdraw anytime of your choice</p>
                     <a class="slide__btn dg__btn" href="#">JOIN WITH US</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+

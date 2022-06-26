@@ -34,13 +34,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-12 col-sm-12 col-md-12">
                         <div class="dg__secure__inner">
-                            <h3 class="section__title--4">About DGTAKA & its Future</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable. </p>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable.</p>
+                            <h3 class="section__title--4">About Koinbetter & its Future</h3>
+                            <p>
+                                Become a better earner in all form of cryptocurrency with KOINBETTER.
+                                This is a profitable trading firm, That beats all odds of how volatile the crypto market is. That’s to say it give you the full standards of Crypto market, with an insurance and assurance of your profits. Koinbetter had given her investors a the right for private fund that invests primarily in forex, crypto currencies and their derivatives. In other words, very profitable ventures. Thanks to this method we are allowed to provide our investors with hourly accruals. </p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="col-lg-5 col-12 col-sm-12 col-md-12 sm__mt--40 md__mt--40">
@@ -60,13 +58,15 @@
                     <div class="col-lg-12">
                         <div class="dg__video__inner">
                             <h2>This Is a Parfect way to know about us</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form, by injected humour, or randomised words which don't
-                                look even slightly believable</p>
+                            <p>KOINBETTER IS A RISK-FREE CRYPTO TRADING AND CLOUD MINING COMPANY
+                                We help you to achieve your dreams and to live to your expectations. The business
+                                operating system has been precisely engineered to ensure fair and instant revenue
+                                distributions to all her investors.</p>
                             <div class="play__video">
                                 <a class="play__btn" href="https://www.youtube.com/watch?v=2X9eJF1nLiY"><img
-                                        src="{{asset('data/images/about/play.png')}}" alt="play icon">Play Now</a>
+                                        src="{{ asset('data/images/about/play.png') }}" alt="play icon">Play Now</a>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -87,16 +87,18 @@
                     <div class="col-lg-7 col-xl-6 offset-xl-1 col-md-12 col-sm-12 col-12 sm__mt--40 md__mt--40">
                         <div class="service__inner">
                             <h3 class="section__title--4">Best Services from us.</h3>
-                            <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque
-                                laudantium, totam aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                sit aspernatur.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque
-                                laudantium, totam aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                sit aspernatur. There are many variations passages Lorem Ipsum available, but the
-                                majority have suffered alteration in some form, by injected humour, or randomised words
-                                which don't look even slightly believable.</p>
+                                <p>The main activity of our company is arbitration in the cryptocurrency market. We buy a
+                                    cryptocurrency asset on a exchange with a minimum price and sell it on another exchange
+                                    at a high price, making profit from the difference between prices. Having a deposit on
+                                    most major cryptocurrency exchanges, we are given the opportunity to choose the most
+                                    advantageous offers for buying and selling cryptocurrencies. KOINBETTER.COM We have
+                                    developed special software - Matic Engine™, which performs such an operation in an
+                                    automatic mode in a second, so we bypass the volatility risk inherent in
+                                    cryptocurrencies. It is practically not possible for one trader to have active deposits
+                                    on the maximum number of exchanges in order to choose the most favorable price
+                                    conditions. etrades-fx.net, thanks to local partners around the world, has accounts in
+                                    various cryptocurrency exchanges. We are constantly adding new exchanges, attracting new
+                                    local partners.</p>
                         </div>
                     </div>
                 </div>

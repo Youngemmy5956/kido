@@ -36,12 +36,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="wallet__inner">
                             <h2>A Most Powerful wallet is develop for you, you can use this wallet for next secure transaction.</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                                aut fugit,</p>
+                            <p>KoinBetter.com works every day to develop new market winning profitable strategies attracting new reliable partners on all over the globe. For over years now Trust and fidelity keeps our partners and investors in a skyRocking manner yielding there profits is all we care.</p>
+                            <p></p>
                             <div class="wallet__btn">
                                 <a href="#">apply For Wallet</a>
                             </div>
@@ -63,8 +59,7 @@
                     <div class="col-lg-12">
                         <div class="section__title--6">
                             <h2>What is our wallet features</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text</p>
+                            <p>The following are the features you benefit from investing with us.</p>
                         </div>
                     </div>
                 </div>
