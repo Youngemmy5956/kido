@@ -2,13 +2,14 @@
 <html class="no-js" lang="zxx">
 
 <head>
+    @include('web.home.fragments.drift')
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Koin better</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicons -->
+    <!-- Favicons -->   
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/icon.png">
     <!-- Google font (font-family: 'Source Sans Pro', sans-serif; font-family: 'Oswald', sans-serif;) -->
