@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-lg-5 col-12 col-sm-12 col-md-12 sm__mt--40 md__mt--40">
                         <div class="dg__secure__thumb">
-                            <img src="{{asset('data/images/about/6.png')}}" alt="secure images">
+                            <img src="{{asset('data/images/about/j2.png')}}" alt="secure images">
                         </div>
                     </div>
                 </div>
@@ -79,9 +79,26 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                         <div class="service__chart">
-                            <div class="thumb">
-                                <img src="{{asset('data/images/about/service.png')}}" alt="chart">
-                            </div>
+                            <div style="height: 540px;">
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                "autosize": true,
+                                "symbol": "COINBASE:BTCUSD",
+                                "interval": "240",
+                                "timezone": "Etc/UTC",
+                                "theme": "light",
+                                "style": "1",
+                                "locale": "en",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_09e24"
+                               }
+                                );
+                                </script>
+                              </div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-xl-6 offset-xl-1 col-md-12 col-sm-12 col-12 sm__mt--40 md__mt--40">
