@@ -9,19 +9,19 @@
                         <div class="footer__inner">
                             <ul class="ft__menu">
                                 <li>
-                                    <a href="#">Bitcoin Price</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Bitcoin Price</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="#">Helps Portal</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Helps Portal</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Buy Theme</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Buy Theme</a>
                                 </li>
                             </ul>
                         </div>
@@ -36,19 +36,19 @@
                         <div class="footer__inner">
                             <ul class="ft__menu">
                                 <li>
-                                    <a href="#">Currency Exchange</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Currency Exchange</a>
                                 </li>
                                 <li>
-                                    <a href="#">Todays Rate</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Todays Rate</a>
                                 </li>
                                 <li>
-                                    <a href="#">About DG-Taka</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">About DG-Taka</a>
                                 </li>
                                 <li>
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">How To Video</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">How To Video</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,19 +62,19 @@
                         <div class="footer__inner">
                             <ul class="ft__menu">
                                 <li>
-                                    <a href="#">Contact us</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Contact us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Support Center</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Support Center</a>
                                 </li>
                                 <li>
-                                    <a href="#">Helps</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Helps</a>
                                 </li>
                                 <li>
-                                    <a href="#">Terms & Conditions</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Terms & Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="#">Live Chat</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Live Chat</a>
                                 </li>
                             </ul>
                         </div>
@@ -87,12 +87,12 @@
                         <h4>COntact</h4>
                         <div class="footer__inner">
                             <ul>
-                                <li>dgtaka@example.info</li>
+                                <li>Koinbetter@gmail.com</li>
                                 <li>Address:
-                                    <br> your address here
+                                    <br>No 60, Navada street, Newark,NJ07136
                                 </li>
                                 <li>Phone:
-                                    <br> +11 1111 111 111
+                                    <br> +1 (731) 991-4251
                                 </li>
                             </ul>
                         </div>
@@ -107,33 +107,33 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-6 col-12">
                     <div class="copyright__inner">
-                        <p>CopyRIght © All Right Reserved</p>
+                        <p>CopyRIght © All Right Reserved Koinbetter</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-12">
                     <ul class="footer__right social__icon">
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/message/3SH55MT6FCWHJ1">
                                 <i class="fa fa-facebook-official"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/message/3SH55MT6FCWHJ1">
                                 <i class="fa fa-linkedin-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/message/3SH55MT6FCWHJ1">
                                 <i class="fa fa-twitter-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/message/3SH55MT6FCWHJ1">
                                 <i class="fa fa-vimeo-square"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://wa.me/message/3SH55MT6FCWHJ1">
                                 <i class="fa fa-tumblr-square"></i>
                             </a>
                         </li>

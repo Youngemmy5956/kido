@@ -16,7 +16,7 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Contact With us</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.html">Home</a>
+                                    <a class="breadcrumb-item" href="">Home</a>
                                     <span class="brd-separetor">/</span>
                                     <span class="breadcrumb-item active">wallet</span>
                                 </nav>
@@ -35,12 +35,8 @@
                     <div class="col-lg-12">
                         <div class="contact__title">
                             <img src="{{asset('data/images/about/contact.png')}}" alt="conatct images">
-                            <h2>Get Dgtaka where you need !</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h2>Get Koinbetter for your trusted investment</h2>
+                            <p>cryptocurrencies such as Bitcoin and Ethereum are launched with lofty objectives, which may be achieved over long time horizons. While the success of any cryptocurrency project is not assured, early investors in a crypto project that reaches its goals can be richly rewarded over the long term.</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +50,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-12 sm__mt--40 md__mt--40">
                         <div class="dg__contact__wrapper">
-                            <form id="contact-form" class="contact-form" action="https://try.htmldemo.net/dgtaka/mail.php" method="post">
+                            <form id="contact-form" class="contact-form" action="" method="post">
                                 <div class="single-contact-form">
                                     <span>Full Name</span>
                                     <input type="text" name="firstname">

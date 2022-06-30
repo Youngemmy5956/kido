@@ -1,4 +1,4 @@
-<section class="dg__software__area bg-image--5 dg__software--2 section-padding--xl">
+{{-- <section class="dg__software__area bg-image--5 dg__software--2 section-padding--xl">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -34,4 +34,4 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}

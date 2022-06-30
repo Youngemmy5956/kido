@@ -3,10 +3,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="section__title--3 text-center">
-                    <h2 class="with__line">We work Together</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</p>
+                    <h2 class="with__line">let's work Together</h2>
+                    <p>Let's get to know better</p>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Services We Provide</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.html">Home</a>
+                                    <a class="breadcrumb-item" href="">Home</a>
                                     <span class="brd-separetor">/</span>
                                     <span class="breadcrumb-item active">Service</span>
                                 </nav>
@@ -70,9 +70,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Safe Service</a>
+                                <a href="">Safe Service</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>CBC’s Team Members step into the shoes of the Independent Banker and, based upon their experience and current knowledge of the marketplace.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -83,9 +83,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">First Transfer</a>
+                                <a href="">Stock & Commodity</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Offering you the best values and deals in the shares & stock market</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -96,9 +96,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">First Transfer</a>
+                                <a href="">Forex Trading</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Join the most liquid Foreign Exchange market in the world</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -111,9 +111,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Online SHopping</a>
+                                <a href="">Crypto Investment</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Trade Crypto CFDs (BTC, ETH, LTC) against the US dollar with us today.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -124,9 +124,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Phone Support</a>
+                                <a href="">RealEstate Investment</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>The Fastest Property Investment in the market.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -137,9 +137,10 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Local Bank Conncetion</a>
+                                <a href="">Local Bank Conncetion</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Community Bank Connection provides intelligent, compliant, and focused solutions throughout the market.
+                                </p>
                         </div>
                     </div>
                     <!-- End Single Service -->
