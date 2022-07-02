@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <div class="images-2">
-                        <img src="{{asset('data/images/about/wallet-2.png')}}" alt="wallet images">
+                        <img src="{{asset('data/images/about/x.gif')}}" alt="wallet images">
                     </div>
                 </div>
             </div>

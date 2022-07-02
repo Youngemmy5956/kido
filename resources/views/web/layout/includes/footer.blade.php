@@ -89,7 +89,7 @@
                             <ul>
                                 <li>Koinbetter@gmail.com</li>
                                 <li>Address:
-                                    <br>No 60, Navada street, Newark,NJ07136
+                                    <br>No 60, Nevada street, Newark,NJ07136
                                 </li>
                                 <li>Phone:
                                     <br> +1 (731) 991-4251

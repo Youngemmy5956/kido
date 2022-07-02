@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-lg-5 col-md-12 col-sm-12 col-12 sm__mt--40 md__mt--40">
                         <div class="dg__secure__thumb">
-                            <img src="{{asset('data/images/about/j2.png')}}" alt="secure images">
+                            <img src="{{asset('data/images/about/f.gif')}}" alt="secure images">
                         </div>
                     </div>
                 </div>

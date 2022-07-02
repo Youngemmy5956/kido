@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="thumb">
-                    <img src="{{asset('data/images/about/4.png')}}" alt="computer images">
+                    <img src="{{asset('data/images/about/d.gif')}}" alt="computer images">
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12 sm__mt--40 md__mt--40">
