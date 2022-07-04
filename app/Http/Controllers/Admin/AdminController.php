@@ -3,15 +3,22 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\User;
+use App\Models\Admin;
 use App\Models\Package;
 use App\Models\Product;
 use App\Models\Approval;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class AdminController extends Controller
-{
+{   
+  
+    public function login(){
+        return view("admin.Auth.login");
+    }
+
     public function index(){
         $users = User::get();
         return view("admin.index")->with(['users'=>$users]);
@@ -63,6 +70,29 @@ class AdminController extends Controller
     }
 
     public function register(){
-        return view("admin.register");
+        return view("admin.Auth.register");
+    }
+    public function register_admin(Request $request){
+        $request->validate([
+            'email' => 'required|email|unique:admin',
+            'password' => 'required|confirmed'
+        ]);
+
+        Admin::create(['name' => $request->name,'email' => $request->email,'password' => Hash::make($request->password)]);
+        if(auth('admin')->attempt($request->only("email","password"))){
+            return redirect()->route("admin.dashboard");
+        }else{
+            return back()->with(['msg'=>"oops somethingb went wrong"]);
+        }
+    }
+
+    public function admin_login(Request $request){
+        $request->validate(['email' => 'required|email','password'=> 'required']);
+
+        if(auth('admin')->attempt($request->only('email','password'))){
+            return redirect()->route('admin.dashboard');
+        }else{
+            return back()->with(['msg' => 'Oops something went wrong']);
+        }
     }
 }

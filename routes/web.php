@@ -52,11 +52,14 @@ Route::post('/user/history',[DashboardController::class,'history'])->name('user.
 
 
 # Admin Dashboard
-Route::get("/admin/dashboard",[AdminController::class,"index"])->name("admin.dashboard");
+Route::get("/admin/dashboard",[AdminController::class,"index"])->name("admin.dashboard")->middleware('admin');
+Route::get("/admin/login",[AdminController::class,"login"])->name("admin.login");
+Route::post("/admin/login",[AdminController::class,"admin_login"]);
 Route::get("/admin/approve",[AdminController::class,"approve"])->name("admin.approve");
 Route::get("/admin/approved/{approval}",[AdminController::class,"approved"])->name("approved");
 Route::get("/admin/package/",[AdminController::class,"package"])->name("admin.package");
 Route::get("/admin/product/",[AdminController::class,"product"])->name("admin.product");
 Route::post("/admin/product/",[AdminController::class,"store_product"])->name("admin.product");
 Route::post("/admin/package/create",[AdminController::class,"create_package"])->name("admin.create_package");
-Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");
+Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register")->middleware('admin');
+Route::post("/admin/register",[AdminController::class,"register_admin"]);
