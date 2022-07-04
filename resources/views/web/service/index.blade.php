@@ -17,7 +17,7 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Services We Provide</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.html">Home</a>
+                                    <a class="breadcrumb-item" href="">Home</a>
                                     <span class="brd-separetor">/</span>
                                     <span class="breadcrumb-item active">Service</span>
                                 </nav>
@@ -36,18 +36,13 @@
                     <div class="col-lg-7 col-md-12 col-sm-12 col-12">
                         <div class="dg__secure__inner">
                             <h3 class="section__title--4">World Best Cryptocurrency</h3>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                believable. </p>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                                alteration in some form, by injected humour, or randomised words which don't look even slightly
-                                believable.
-                            </p>
+                            <p>Our investment platform is a product of careful preparation and fruitful work of experts in the field of Bitcoin mining, highly profitable trade in cryptocurrencies and online marketing. Using modern methods of doing business and a personal approach to each client, we offer a unique investment model to people who want to use Bitcoin not only as a method of payment, but also as a reliable source of stable income. KOINBETTER  uses only modern mining equipment and trades at the most stable markets, which minimizes the risk of financial loss to customers and guarantees them a stable income accrued every calendar day.</p>
+                            <p>
                         </div>
                     </div>
                     <div class="col-lg-5 col-md-12 col-sm-12 col-12 sm__mt--40 md__mt--40">
                         <div class="dg__secure__thumb">
-                            <img src="{{asset('data/images/about/6.png')}}" alt="secure images">
+                            <img src="{{asset('data/images/about/f.gif')}}" alt="secure images">
                         </div>
                     </div>
                 </div>
@@ -61,8 +56,7 @@
                     <div class="col-lg-12">
                         <div class="section__title--6">
                             <h2>Our Services</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-								form, by injected humour.</p>
+                            <p>KOINBETTER a cryptocurrency partners which has been I identified with the test of time, thoroughly over the past 5 years and they are the most dynamically developing institutional firm in the cryptocurrency assets, the firm taking it stand as a mandate before 2025,to become the next global giant in the circulation market.</p>
                         </div>
                     </div>
                 </div>
@@ -76,9 +70,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Safe Service</a>
+                                <a href="">Safe Service</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>CBC’s Team Members step into the shoes of the Independent Banker and, based upon their experience and current knowledge of the marketplace.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -89,9 +83,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">First Transfer</a>
+                                <a href="">Stock & Commodity</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Offering you the best values and deals in the shares & stock market</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -102,9 +96,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">First Transfer</a>
+                                <a href="">Forex Trading</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Join the most liquid Foreign Exchange market in the world</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -117,9 +111,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Online SHopping</a>
+                                <a href="">Crypto Investment</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Trade Crypto CFDs (BTC, ETH, LTC) against the US dollar with us today.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -130,9 +124,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Phone Support</a>
+                                <a href="">RealEstate Investment</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>The Fastest Property Investment in the market.</p>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -143,9 +137,10 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="single-service.html">Local Bank Conncetion</a>
+                                <a href="">Local Bank Conncetion</a>
                             </h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply.</p>
+                            <p>Community Bank Connection provides intelligent, compliant, and focused solutions throughout the market.
+                                </p>
                         </div>
                     </div>
                     <!-- End Single Service -->

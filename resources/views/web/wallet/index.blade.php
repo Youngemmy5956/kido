@@ -17,7 +17,7 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">Get Our Currency</h2>
                                 <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="index.html">Home</a>
+                                    <a class="breadcrumb-item" href="">Home</a>
                                     <span class="brd-separetor">/</span>
                                     <span class="breadcrumb-item active">wallet</span>
                                 </nav>
@@ -36,12 +36,8 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="wallet__inner">
                             <h2>A Most Powerful wallet is develop for you, you can use this wallet for next secure transaction.</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                                aut fugit,</p>
+                            <p>KoinBetter.com works every day to develop new market winning profitable strategies attracting new reliable partners on all over the globe. For over years now Trust and fidelity keeps our partners and investors in a skyRocking manner yielding there profits is all we care.</p>
+                            <p></p>
                             <div class="wallet__btn">
                                 <a href="#">apply For Wallet</a>
                             </div>
@@ -63,8 +59,7 @@
                     <div class="col-lg-12">
                         <div class="section__title--6">
                             <h2>What is our wallet features</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                the industry's standard dummy text</p>
+                            <p>The following are the features you benefit from investing with us.</p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +74,7 @@
                             </div>
                             <div class="content">
                                 <h2>First Access</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+                                <p>Enjoy service with user-friendly features, secure infrastructure & applications with a difference.</p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +87,7 @@
                             </div>
                             <div class="content">
                                 <h2>Speed Transfer</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+                                <p>Enjoy stable daily interest rates with well-diversified intelligent portfolios that generates secure revenue.</p>
                             </div>
                         </div>
                     </div>
@@ -101,11 +96,11 @@
                     <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6 col-12">
                         <div class="feature bg--3">
                             <div class="icon">
-                                <img src="images/service/icon/12.png" alt="service icon">
+                                <img src="{{asset('data/images/service/icon/12.png')}}" alt="service icon">
                             </div>
                             <div class="content">
                                 <h2>Low Cost</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+                                <p>The more you invite, the more commission you earn. Earn your friends' investments with commission over 5%.</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +113,7 @@
                             </div>
                             <div class="content">
                                 <h2>Reliable</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+                                <p>Hot & cold wallet management, tracking software, restricted access & key management methods serve your security.</p>
                             </div>
                         </div>
                     </div>
@@ -174,14 +169,14 @@
                         </div>
                     </div>
                     <div class="images-2">
-                        <img src="{{asset('data/images/about/wallet-2.png')}}" alt="wallet images">
+                        <img src="{{asset('data/images/about/x.gif')}}" alt="wallet images">
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Get Currency Area -->
         <!-- Start Download Software Area -->
-        <section class="dg__software__area bg-image--5 dg__software--2 section-padding--xl">
+        {{-- <section class="dg__software__area bg-image--5 dg__software--2 section-padding--xl">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -215,7 +210,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- End Download Software Area -->
         <!-- Start Blog Area -->
         <section class="dg__blog__area bg--white section-padding--xl">
@@ -232,7 +227,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <article class="blog__2">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="">
                                     <img src="{{asset('data/images/blog/md-img/3.jpg')}}" alt="">
                                 </a>
                             </div>
@@ -242,10 +237,9 @@
                                     <li>Post By: Kb Arif</li>
                                 </ul>
                                 <h2>
-                                    <a href="blog-details.html">Bitcoin is most Popular from other cryptocurrency.</a>
+                                    <a href="">Bitcoin is most Popular from other cryptocurrency.</a>
                                 </h2>
-                                <p>There are many variations passages of Lorem Ipsum available, the majority have suffered alteration
-                                    in some form.</p>
+                                <p>Crypto Flipsider News – Grayscale Sues SEC, Bitcoin Dips, Three Arrows Liquidated, Vasil Proposal, Coinbase Europe Expansion.</p>
                             </div>
                         </article>
                     </div>
@@ -254,7 +248,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <article class="blog__2">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="">
                                     <img src="{{asset('data/images/blog/md-img/4.jpg')}}" alt="">
                                 </a>
                             </div>
@@ -264,10 +258,9 @@
                                     <li>Post By: Kb Arif</li>
                                 </ul>
                                 <h2>
-                                    <a href="blog-details.html">Bitcoin is most Popular from other cryptocurrency.</a>
+                                    <a href="">Crypto & Bitcoin News</a>
                                 </h2>
-                                <p>There are many variations passages of Lorem Ipsum available, the majority have suffered alteration
-                                    in some form.</p>
+                                <p>Bitcoin Nears USD 19K, Ethereum Tests USD 1,000 as 'Final Washout' in Cards Before Rebound.</p>
                             </div>
                         </article>
                     </div>
@@ -276,7 +269,7 @@
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                         <article class="blog__2">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="">
                                     <img src="{{asset('data/images/blog/md-img/5.jpg')}}" alt="">
                                 </a>
                             </div>
@@ -286,10 +279,9 @@
                                     <li>Post By: Kb Arif</li>
                                 </ul>
                                 <h2>
-                                    <a href="blog-details.html">Bitcoin is most Popular from other cryptocurrency.</a>
+                                    <a href="">Deposit crypto,earn rewards</a>
                                 </h2>
-                                <p>There are many variations passages of Lorem Ipsum available, the majority have suffered alteration
-                                    in some form.</p>
+                                <p>Blockchain analytics firm Elliptic has found a strong connection between North Korea’s Lazarus Group and the $100 million crypto hack on Harmony’s Horizon Bridge.</p>
                             </div>
                         </article>
                     </div>

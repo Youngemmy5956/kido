@@ -2,9 +2,26 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                <div class="thumb">
-                    <img src="{{asset('data/images/about/5.png')}}" alt="converter images">
-                </div>
+                <div style="height: 540px;">
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                    new TradingView.widget(
+                    {
+                    "autosize": true,
+                    "symbol": "COINBASE:BTCUSD",
+                    "interval": "240",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_09e24"
+                   }
+                    );
+                    </script>
+                  </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                 <div class="content">

@@ -16,9 +16,10 @@
                             </div>
                             <div class="content">
                                 <h4>
-                                    <a href="#">Register Fot BTC</a>
+                                    <a href="#">REGISTER WITH US</a>
                                 </h4>
-                                <p>There are many variations of passages of Lorem Ipsum available.</p>
+                                <p>
+                                    Your registration gives you access to the plans..</p>
                             </div>
                         </div>
                     </div>
@@ -31,9 +32,10 @@
                             </div>
                             <div class="content">
                                 <h4>
-                                    <a href="#">Open Creypto Wallet</a>
+                                    <a href="#">OPEN YOUR CRYPTO WALLET</a>
                                 </h4>
-                                <p>There are many variations of passages of Lorem Ipsum available.</p>
+                                <p>
+                                    This is where your coin will be sent to..</p>
                             </div>
                         </div>
                     </div>
@@ -46,9 +48,10 @@
                             </div>
                             <div class="content">
                                 <h4>
-                                    <a href="#">Start Working WIth BTC</a>
+                                    <a href="#">START YOUR INVESTMENT</a>
                                 </h4>
-                                <p>There are many variations of passages of Lorem Ipsum available.</p>
+                                <p>
+                                    Enjoy our stable and safe services.</p>
                             </div>
                         </div>
                     </div>

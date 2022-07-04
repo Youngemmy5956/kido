@@ -16,7 +16,7 @@
 							<div class="bradcaump__inner text-center">
 								<h2 class="bradcaump-title">Our Team Member</h2>
 								<nav class="bradcaump-inner">
-									<a class="breadcrumb-item" href="index.html">Home</a>
+									<a class="breadcrumb-item" href="">Home</a>
 									<span class="brd-separetor">/</span>
 									<span class="breadcrumb-item active">Team</span>
 								</nav>
@@ -34,9 +34,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="tm__title text-center">
-							<img src="{{asset('data/images/team/title/1.png" alt="title images')}}">
-							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-								from 45 BC, making it over 2000 years old.</p>
+							{{-- <img src="{{asset('data/images/team/title/1.png" alt="title images')}}"> --}}
+							<b><h1 >Meet our hardworking team members</h1></b>
 						</div>
 					</div>
 				</div>
@@ -91,7 +90,7 @@
 								</div>
 								<div class="team__content">
 									<h4>
-										<a href="#">Virginia Perry</a>
+										<a href="#">Jacqueine Debra-curtis</a>
 									</h4>
 									<p>Head of Marketing</p>
 									<ul class="team__share d-flex justify-content-center">

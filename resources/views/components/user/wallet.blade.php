@@ -13,7 +13,9 @@
             <div class="flex flex-col mx-4">
                 <p class="text-blue-700">Wallet-Address:</p>
                 <span class="inline-block text-blue-700"></span>
-                <p class="text-gray-500 border md:w-7/12 w-full text">kkedcvjdkjhbvjkhbvjdjcbe7474jvjfv898ub <span class="fa-solid fa-copy md:ml-4 ml-1 copy"></span></p>
+                <p class="text-gray-500 border md:w-7/12 w-full text">bc1q48dfktqykv7syxqtvy0rdkdnhj3h89f0mp748q <span class="fa-solid fa-copy md:ml-4 ml-1 copy">  Bitcoin</span></p>
+                <p class="text-gray-500 border md:w-7/12 w-full text">0x15314cFaB1fD3D66F4C57Bee39BB2c522adF28F6 <span class="fa-solid fa-copy md:ml-4 ml-1 copy">  Ethereum</span></p>
+                <p class="text-gray-500 border md:w-7/12 w-full text">0xA6072FE97039B33F73552Eca88d8A31Af1dE6A1d <span class="fa-solid fa-copy md:ml-4 ml-1 copy">  USDT</span></p>
                <script>
 
                    let copy = document.querySelector('.copy');
@@ -51,11 +53,11 @@
             </div>
 
             <input type="text" placeholder="Transaction ID (Trxid)" name="transaction" class="w-full p-4 border mb-2 focus:outline-blue-500 id">
-            
+
             <button class="w-full bg-blue-400 py-4 wallet">Deposite</button>
             @endif
         </div>
-    </div>  
+    </div>
 
     <!-- end of deposition panel -->
 
@@ -78,9 +80,9 @@
                 </div>
            <button class="w-full bg-blue-400 py-4 wbtn mt-2 with">Withdraw</button>
             </div>
-        </div>  
+        </div>
 
-                  
+
 
     <section>
         <div class="flex flex-col justify-center items-center w-full bg-blue-500 pb-10 space-y-6">
@@ -88,7 +90,7 @@
             <p class="font-bold text-2xl">USDT <span class="user_amount">{{ auth('web')->user()->wallet->amount }}</span> </p>
             <div class="flex space-x-3">
                 <a href="#" class="bg-white md:px-8 px-4 py-2 deposite"><span class="fa fa-credit-card mx-2"></span>Deposit</a>
-                
+
                 <!-- <a href="#" class="bg-white md:px-8 px-4 py-2"><span class="fa-brands fa-btc mx-2"></span>Buy / Sell</a> -->
                 <a href="#" class="bg-white md:px-8 px-4 py-2 withdraw"><span class="fa fa-bank mx-2"></span>Withdraw</a>
             </div>
@@ -113,7 +115,7 @@
 
 
             add.addEventListener("click",function(){
-              
+
                 if(address.value < 5){
                     return console.log("Please enter a valid wallet address");
                 }
@@ -134,7 +136,7 @@
                         err.innerHTML = 'added successfully'
                         addr.innerHTML = val.data;
                     }
-                    
+
                 });
             });
 
