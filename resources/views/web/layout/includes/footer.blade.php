@@ -62,19 +62,19 @@
                         <div class="footer__inner">
                             <ul class="ft__menu">
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Contact us</a>
+                                    <a href="https://t.me/+kRgfxjEF-wViYzk5">Contact us</a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Support Center</a>
+                                    <a href="https://t.me/+kRgfxjEF-wViYzk5">Support Center</a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Helps</a>
+                                    <a href="https://t.me/+kRgfxjEF-wViYzk5">Helps</a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Terms & Conditions</a>
+                                    <a href="https://t.me/+kRgfxjEF-wViYzk5">Terms & Conditions</a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">Live Chat</a>
+                                    <a href="https://t.me/+kRgfxjEF-wViYzk5">Live Chat</a>
                                 </li>
                             </ul>
                         </div>
