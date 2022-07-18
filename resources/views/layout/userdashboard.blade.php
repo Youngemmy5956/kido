@@ -53,7 +53,7 @@
                                     <h3 class="close-notification">x</h3>
                                 </div>
                             </header>
-                            <div class="notification-msg-container">
+                            {{-- <div class="notification-msg-container">
                                 <div class="msg-wrapper">
                                     <div class="msg-badge "><h1>R</h1></div>
                                     <div class="msg">
@@ -78,7 +78,7 @@
                                         <p class="time">1 hours ago</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <footer class="notification-footer">
                                 <a href="#">see all</a>
                             </footer>
