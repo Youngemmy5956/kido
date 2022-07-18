@@ -1,8 +1,10 @@
 @extends('layout.userdashboard')
 @section('content')
             <div class="page-displayer">
-                <p class="header">notice</p>
+                <p class="header">Wallet address </p>
                 <div class=" overview-container animate__animated animate__bounceInDown">
+                    <p class="error-message">Purchase and upgrade your plans here.</p>
+                    <p class="error-message">Purchase and upgrade your plans here.</p>
                     <p class="error-message">Purchase and upgrade your plans here.</p>
                 </div>
                 <p class="header">invest</p>
@@ -21,7 +23,7 @@
                     </div>
                 @else
                 <div class=" overview-container animate__animated animate__bounceInUp reinvest-plan-container mainframe">
-                
+
                     <div class="frame">
 
                     </div>
@@ -49,7 +51,7 @@
                 @endif
 
                 @endif
-                
+
             </div>
             <script>
                 let err = document.querySelector('.err');
@@ -82,7 +84,7 @@
                          })
 
                     main.style.display = "block";
-                    file.nextElementSibling.style.display = "block";                         
+                    file.nextElementSibling.style.display = "block";
 
                 })
             </script>
