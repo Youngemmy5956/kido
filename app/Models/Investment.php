@@ -11,7 +11,11 @@ class Investment extends Model
     
     protected $table = 'investments';
 
-    protected $fillable = ['user_id','date','amount','roi','duration','created_at','expire_at'];
+    protected $fillable = ['user_id','date','amount','plan','roi','duration'];
 
-    public $timestamps = false;
+    public $timestamps = true;
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

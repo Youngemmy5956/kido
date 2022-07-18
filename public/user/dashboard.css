@@ -1,0 +1,736 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.mining-btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url(../images/sign-concept-illustration_114360-5375-removebg-preview.png);
+    background-size: cover;
+    background-position: top;
+    box-shadow: 0px 0px 10px #ddd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dashboard-landpage{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside{
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: rgb(29, 1, 29);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.logo-container{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container h1{
+    color: transparent;
+    font-size: 2rem;
+    font-family: poppins,sans-serif;
+    background: linear-gradient(90deg, rgb(194, 11, 194) 40% , white 10% );
+    -webkit-background-clip: text;
+}
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+}
+.link-container:nth-of-type(2){
+    margin-bottom: -15px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+.bar
+{
+    height: 100%;
+    width: 5px;
+}
+.link-container:hover{
+    background-color: rgba(63, 1, 63, 0.692);
+}
+.link-container:hover
+.bar{
+    background-color: rgb(146, 0, 146);
+}
+.link-container:focus-within{
+    background-color: rgba(63, 1, 63, 0.692);
+}
+.link-container:focus-within
+.bar{
+    background-color: rgb(146, 0, 146);
+}
+.dashboard-links{
+    color: white;
+    font-family: poppins, sans-serif;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.info-wrapper{
+    width: 80%;
+    padding: 10px 0px 10px 0px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-self: start;
+}
+.user-info-display{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.user-icon-container{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+.notification-modal{
+    padding: 10;
+    width: 400px;
+    position: absolute;
+    background-color: white;
+    top: 150%;
+    left: -250px;
+    transform: scale(0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(209, 209, 209);
+}
+.profile-modal{
+    position: absolute;
+    top: 150%;
+    right: 0%;
+    height: 180px;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgb(95, 95, 95);
+    border-radius: 5px;
+    transform: scale(0);
+}
+.close-profile{
+    font-family: poppins;
+    width: 80%;
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .5;
+}
+.change-password{
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(62, 16, 136) 20%, rgb(100, 11, 202) 100%);
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px  rgba(100, 11, 202, 0.664);
+}
+.change-password a{
+    font-family: poppins;
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+}
+.profile-modal button {
+    width: 90%;
+    padding: 10px;
+    background-color: none;
+    border: none;
+    outline: none;
+    font-family: poppins;
+    font-size: 1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.hello-user{
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: .9;
+    font-family: poppins,sans-serif;
+    padding-left: 20px;
+    text-transform: capitalize;
+}
+.notification-icon-container, .profile-icon-container, .share-icon-container{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+}
+.notification-icon-container:hover, .profile-icon-container:hover, .share-icon-container:hover{
+    box-shadow: 0px 0px 5px #ddd;
+}
+.notification-header{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid rgb(236, 236, 236);
+    border-radius: 10px 10px 0px 0px;
+}
+.notification-header h2{
+    width: 60%;
+    font-family: poppins;
+    color: rgb(109, 108, 108);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.header-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    height:100%;
+    width: 20%;
+}
+.dot-container{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 30px;
+    cursor: pointer;
+    padding: 5px;
+}
+.dot{
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 61);
+}
+.close-notification{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: poppins;
+    color: black;
+    cursor: pointer;
+}
+.notification-footer{
+    width: 100%;
+    border-radius: 0px 0px 10px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: white;
+    border-top: 2px solid rgb(236, 236, 236);
+}
+.notification-footer a{
+    font-size: 1rem;
+    font-family: poppins;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: blue;
+}
+.notification-msg-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.msg-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+    font-family: poppins;
+    cursor: pointer;
+}
+.msg-wrapper:hover{
+    background-color: rgb(12, 1, 36);
+    color: white;
+    padding-top: 10px;
+}
+.msg-badge{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(179, 0, 179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: poppins;
+}
+.blue{
+    background-color: rgb(53, 110, 245);
+}
+.pink{
+    background-color: rgb(255, 101, 127);
+}
+.msg{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.msg p, .msg h3{
+    width: 100%;
+}
+.msg p{
+    font-family: roboto;
+    opacity: .7;
+    font-size: .9rem;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.time{
+    font-weight: 500;
+}
+.user-icon{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.page-displayer{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* user homepage styles  */
+
+.header{
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: poppins,sans-serif;
+    color: rgb(149, 149, 149);
+    margin: 30px 0px 0px 0px;
+}
+.overview-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 5px 10px #ddd;
+    padding: 0px 10px 0px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.overview-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(63, 1, 63);
+    width: 25%;
+    margin: 5px;
+    height: 60%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.overview-card h2{
+    color: white;
+    font-size: 1.2rem;
+    font-family: poppins,sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.overview-card p{
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    font-family: roboto,sans-serif;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.start-mining-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    color: rgb(167, 167, 167);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header p{
+    width: 50%;
+    font-size: 1.2rem;
+    font-family: poppins,sans-serif;
+    text-transform: capitalize;
+}
+.upgrade{
+    padding-left: 120px;
+}
+.mining-info{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.mining-plans , .want-to-earn-more{
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px  #ddd;
+    width: 60%;
+    margin: 5px;
+    padding-left: 20px;
+}
+.want-to-earn-more {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+ .want-to-earn-more h3{
+    width: 80%;
+    margin-top: 10px;
+    margin-right: auto;
+    font-family: poppins,sans-serif;
+}
+
+.want-to-earn-more p{
+    width: 80%;
+    margin-right: auto;
+    font-family: poppins,sans-serif;
+    
+}
+.my-plan-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.mining-plan-text-container{
+    width: 70%;
+}
+.amount{
+    margin-top: 10px;
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;  
+    text-transform: uppercase;
+    color: purple;
+}
+.mining-plan-text-container h2{
+    margin-top: 10px;
+    font-family: poppins,sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.reset-plan-btn, .update-plan-btn{
+    margin-top: 20px;
+    border: none;
+    height: 45px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    font-family: poppins,sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.want-to-earn-more button{
+    margin-right: auto;
+    margin-top: 0px;
+}
+.mining-plan-text-container p{
+    margin-top: 20px;
+    color: rgb(240, 13, 183);
+    font-family: poppins,sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.info-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 10px 0px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+.info-container p{
+    width: 25%;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-family: poppins;
+    text-transform: capitalize;
+
+}
+.my-plan-container{
+    width: 100%;
+}
+.my-plan-card{
+    width: 30%;
+    margin-right:5px ;
+    padding-left: 10px;
+}
+.my-plan-card p{
+    font-size: 1.1rem;
+    color: rgb(31, 30, 30);
+    font-family: roboto,sans-serif;
+    text-transform: capitalize;
+}
+.my-plan-card .disabled{
+    color: rgb(160, 160, 160);
+}
+
+
+/* transaction page styles  */
+
+.transaction-header{
+    color: rgba(0, 0, 0, 0.582);
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+.span-2{
+    width: 45%;
+}
+.header{
+    text-transform: capitalize;
+}
+
+.transaction-withdraw-panel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px 30px 10px;
+}
+.transaction-withdraw-panel p{
+    margin-top: 10px;
+    font-family: poppins;
+    opacity: .7;
+    font-weight: 700;
+}
+.input-container{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.input-container input{
+    width: 48%;
+    outline: none;
+    border:  2px solid  rgb(44, 0, 42);
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 20px;
+}
+.buy-now{
+    padding: 10px;
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(44, 0, 42);
+    color: white;
+    font-family: poppins;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pink-text{
+    color: rgb(211, 8, 143);
+}
+.success{
+    color: green;
+}
+.error{
+    color: red;
+}
+/* reinvest page styles  */
+
+.error-message{
+    font-family: poppins;
+    color: red;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.reinvest-plan-container{
+    justify-content: center;
+    height: auto;
+    padding: 50px;
+}
+.reinvest-plan-container p{
+    margin-right: 20px;
+    font-family: poppins;
+}
+.select-plan{
+   
+    padding: 10px;
+    font-size: 1rem;
+    font-family: poppins;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgb(36, 1, 39);
+    border-radius: 0px 0px 10px 10px;
+    text-transform: capitalize;
+    width: 350px;
+    height: 60px;
+    padding-right: 20px;
+}
+option{
+    background-color: rgb(36, 1, 39);
+    color: white;
+    cursor: pointer;
+}
+option:first-of-type{
+    background-color: white;
+    color: rgb(36, 1, 39);
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* account info styles  */
+
+.tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px 25px 15px;
+    box-shadow: 0px 5px 10px #ddd;
+    margin-top: 20px;
+}
+.tab p{
+    font-family: poppins;
+    opacity: .7;
+    text-transform: capitalize;
+}
+@media (max-width:1024px) and (min-width:768px){
+
+    aside{
+        width: 0px;
+        overflow-x: hidden;
+    }
+    .info-wrapper{
+        width: 100%;
+    }
+    .overview-card{
+     overflow-y:auto ;
+     padding: 3px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    aside{
+        width: 0px;
+        overflow-x: hidden;
+    }
+    .info-wrapper{
+        width: 100%;
+    }
+    .overview-container{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .overview-card{
+        width: 100%;
+    }
+    .mining-info{
+        flex-direction: column;
+        height: auto;
+    }
+    .mining-plans{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .want-to-earn-more{
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        padding-left: 60px;
+    }
+    .want-to-earn-more p{
+        margin: 25px 0px 25px 0px;
+        width: 100%;
+    }
+
+}

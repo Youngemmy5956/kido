@@ -23,6 +23,9 @@
                         <td>
                             <a href="{{ route('approved',['approval'=> $approves]) }}" class="bg-green-500 text-white p-4">Approve</a>
                         </td>
+                        <td>
+                            <a href="{{ route('deny',['approval'=> $approves]) }}" class="bg-red-500 text-white p-4">deny</a>
+                        </td>
                     </tr>
                     @endforeach
                 </table>

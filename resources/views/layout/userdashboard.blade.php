@@ -4,61 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-     <link rel="stylesheet" href="{{ asset('asset/font/css/all.css') }}">
+    <title>user dashboard</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="{{ asset('user/dashboard.css') }}">
 </head>
-<body class="relative">
-    <nav class="bg-blue-500 text-white">
-        <div class="container mx-auto flex justify-between py-6 px-3">
-            <div>
-                <a href="{{ route('index') }}"><img src="{{ asset('data/images/logo/1.png') }}" width="200" height="100"></a>
+<body>
+    <section class="dashboard-landpage">
+        <aside>
+            <div class="logo-container">
+                <h1>KOINBETTER</h1>
             </div>
-            <div class="hidden md:block space-x-3 relative">
-                <a href="#" class="border-2 border-white px-4 py-2" onClick="logout()">{{ auth('web')->user()->first_name }}</a>
-                <script>
-                    function logout(){
-                        let log = document.querySelector(".log");
-                        log.classList.toggle('hidden');
-                    }
-                </script>
-                <div class="hidden left-0 absolute log bg-blue-300 px-4 py-2 mt-2 text-black">
-                    <form action="{{ route('logout') }}" method="post" class="inline">
-                        @csrf
-                    <span class="fa fa-sign-out mx-2"></span><input type="submit" href="{{ route('logout') }}" value="Logout">
-                    </form>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/overview.png') }}" alt="" class="icon"><a href="{{ route('user.overview') }}" class="dashboard-links">Overview</a></div>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/salary.png') }}" alt="" class="icon"> <a href="{{ route('user.reinvest') }}" class="dashboard-links">Innvest</a></div>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/b00b3270-c001-4c1c-88be-1fa129600aff-removebg-preview.png') }}" alt="" class="icon"> <a href="{{ route('user.transaction') }}" class="dashboard-links">transactions</a></div>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/debit-card.png') }}" alt="" class="icon"><a href="{{ route('user.invested') }}" class="dashboard-links">Plans</a></div>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/shiba inu.png') }}" alt="" class="icon"><a href="{{ route('user.info') }}" class="dashboard-links">Account info</a></div>   
+        </aside>
+
+        <div class="info-wrapper">
+            <div class="user-info-display">
+                <h1 class="hello-user">hi, {{ auth('web')->user()->first_name }}</h1>
+                <div class="user-icon-container">
+                    <div class="notification-icon-container">
+                        <img src="{{ asset('user/images/profile1.jpg') }}" alt="" class="user-icon ">
+                        <div class="profile-modal">
+                            <div class="close-profile">x</div>
+                            <div class="change-password">
+                                <a href="#">change password</a>
+                            </div>
+                            <form action="{{ route('logout')}}" method="post">
+                                @csrf
+                            <button class="logout">logout</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="profile-icon-container">
+                        <img src="{{ asset('user/images/bell_notification.gif') }}" alt="" class="user-icon notification">
+                        <div class="notification-modal">
+                            <header class="notification-header">
+                                <h2>notifications</h2>
+                                <div class="header-icon-container">
+                                    <div class="dot-container">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <h3 class="close-notification">x</h3>
+                                </div>
+                            </header>
+                            <div class="notification-msg-container">
+                                <div class="msg-wrapper">
+                                    <div class="msg-badge "><h1>R</h1></div>
+                                    <div class="msg">
+                                        <h3>prove submitted succesfully</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="time">2 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="msg-wrapper">
+                                    <div class="msg-badge blue"><h1>S</h1></div>
+                                    <div class="msg">
+                                        <h3>statistics</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="time">1:30 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="msg-wrapper">
+                                    <div class="msg-badge pink"><h1>L</h1></div>
+                                    <div class="msg">
+                                        <h3>your gold plan has expired</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                        <p class="time">1 hours ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="notification-footer">
+                                <a href="#">see all</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="share-icon-container">
+                        <img src="{{ asset('user/images/inbox.gif') }}" alt="" class="user-icon">
+                    </div>
                 </div>
-                 <a href="{{ route('setting') }}" class="border-2 border-white px-4 py-2"><span class="fa fa-cog"></span></a>
             </div>
-             <div class="md:hidden">
-                <span class="fa fa-bars" onClick="bars()"></span>
-            </div>
-            <script>
-                function bars(){
-                    let bars = document.querySelector('.bars-data');
-                    bars.classList.toggle('hidden')
-
-                    console.log(bars.classList.contains('hidden') ? 'yes':'no')
-                }   
-            </script>
-           
-        </div>
-    </nav>
-     <div class="bars-data hidden ">
-           <div class="flex flex-col bg-blue-300">
-               <a href="{{ route('setting') }}" class="block px-4 py-2"><span class="fa fa-user mx-2"></span>{{ auth('web')->user()->first_name }}</a>
-                <a href="{{ route('setting') }}" class="block px-4 py-2"><span class="fa fa-cog mx-2"></span>Setting</a>
-                <form action="{{ route('logout') }}" method="post" class="inline px-4 py-2">
-                        @csrf
-                <span class="fa fa-sign-out mx-2"></span><input type="submit" name="submit" value="Logout">
-                </form>
-           </div>
-    </div>
-
-    @yield("wallet")
-
     @yield('content')
-
-    <script src="{{ asset('js/app.js') }}"></script>
+    </div>
+    </section>
+    <script src="{{ asset('user/js folder/main.js') }}"></script>
 </body>
 </html>
+
+   

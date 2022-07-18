@@ -18,7 +18,6 @@ class CreateApprovalTable extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->integer('amount');
             $table->string('path');
-            $table->string('trans_id');
             $table->foreign('user_id')->on('users')->references('id')->onDelete('cascade');
             $table->timestamps();
         });
@@ -26,7 +25,7 @@ class CreateApprovalTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     *php
      * @return void
      */
     public function down()

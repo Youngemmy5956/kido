@@ -45,21 +45,38 @@ Route::post('/logout',[PublicController::class,'logout'])->name('logout')->middl
 
 
 # User Dashboard
-Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard')->middleware('auth');
-Route::get("/dashboard/settings",[DashboardController::class,'setting'])->name('setting')->middleware('auth');
-Route::get('/user/activate/{name}',[DashboardController::class,'activate'])->name('activate')->middleware('auth');
-Route::post('/user/history',[DashboardController::class,'history'])->name('user.history')->middleware('auth');
+Route::controller(DashboardController::class)->group(function(){
+    Route::middleware('auth')->group(function(){
+        Route::get('/dashboard','index')->name('dashboard');
+        Route::get("/dashboard/overview",'overview')->name('user.overview');
+        Route::get('/dashboard/reinvest','reinvest')->name('user.reinvest');
+        Route::post('/dashboard/reinvest','store_invest');
+        Route::get('/dashboard/palns','plans')->name('user.plans');
+        Route::get('/dashboard/transaction','transaction')->name('user.transaction');
+        Route::post('/dashboard/transaction','store_transaction');
+        Route::get('/dashboard/invested','invested')->name('user.invested');
+        Route::get('/dashboard/info','info')->name('user.info');
+        Route::post('/dashboard/logout','logout')->name("logout");
+    });
+});
 
-
+ 
 # Admin Dashboard
-Route::get("/admin/dashboard",[AdminController::class,"index"])->name("admin.dashboard")->middleware('admin');
+
 Route::get("/admin/login",[AdminController::class,"login"])->name("admin.login");
 Route::post("/admin/login",[AdminController::class,"admin_login"]);
-Route::get("/admin/approve",[AdminController::class,"approve"])->name("admin.approve");
-Route::get("/admin/approved/{approval}",[AdminController::class,"approved"])->name("approved");
-Route::get("/admin/package/",[AdminController::class,"package"])->name("admin.package");
-Route::get("/admin/product/",[AdminController::class,"product"])->name("admin.product");
-Route::post("/admin/product/",[AdminController::class,"store_product"])->name("admin.product");
-Route::post("/admin/package/create",[AdminController::class,"create_package"])->name("admin.create_package");
-Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register")->middleware('admin');
+
+Route::middleware('admin')->group(function(){
+    Route::get("/admin/dashboard",[AdminController::class,"index"])->name("admin.dashboard");
+    Route::get("/admin/approve",[AdminController::class,"approve"])->name("admin.approve");
+    Route::get("/admin/approved/{approval}",[AdminController::class,"approved"])->name("approved");
+    Route::get("/admin/deny/{approval}",[AdminController::class,"deny"])->name("deny");
+    Route::get("/admin/package/",[AdminController::class,"package"])->name("admin.package");
+    Route::get("/admin/product/",[AdminController::class,"product"])->name("admin.product");
+    Route::post("/admin/product/",[AdminController::class,"store_product"])->name("admin.product");
+    Route::post("/admin/package/create",[AdminController::class,"create_package"])->name("admin.create_package");
+    Route::get("admin/logout",[AdminController::class,'logout'])->name('admin.logout');
+});
+
+Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");
 Route::post("/admin/register",[AdminController::class,"register_admin"]);

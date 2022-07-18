@@ -14,7 +14,7 @@
         <div class="flex space-x-6">
             <a href="#" class="block">Home</a>
              <a href="#" class="block">Users</a>
-              <a href="#" class="block">Info</a>
+              <a href="{{ route('admin.logout') }}" class="block">login</a>
         </div>
     </nav>
     </section>

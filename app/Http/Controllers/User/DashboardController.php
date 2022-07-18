@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Models\Address;
-use App\Models\History;
-use App\Models\Package;
-use App\Models\Product;
-use App\Models\Approval;
-use App\Models\Investment;
+use App\Models\Plan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Approval;
+use App\Models\AwaitingPayment;
+use App\Models\History;
+use App\Models\Investment;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Storage;
@@ -18,85 +17,85 @@ use Illuminate\Support\Facades\Storage;
 class DashboardController extends Controller
 {
     public function index(){
-        $approve = Approval::where('user_id',auth()->user()->id)->get()->count();
-        // dd($approve);
-        $coin = Http::get('https://api.roqqu.com/prod/v1/prices');
-
-        $addr = Address::where("user_id",auth()->user()->id)->first();
-
-
-        $invest = Investment::where("user_id",auth('web')->user()->id)->get();
-
-        return view("user.dashboard")->with(['approve'=>$approve,'coin' =>  $coin->json()['data'],'investment'=>$invest,'address' => $addr]);
+      $overview = Investment::where('user_id',auth('web')->id())->first();
+        $history = History::where('user_id',auth('web')->id())->get();
+       return view("user.dashboard")->with(['overview'=>$overview,'history'=>$history]);
     }
-    public function setting(){
-        return view("user.setting");
+
+    public function overview(){
+        $overview = Investment::where('user_id',auth('web')->id())->first();
+        $history = History::orderBy('created_at','desc')->where('user_id',auth('web')->id())->get();
+       return view("user.dashboard")->with(['overview'=>$overview,'history'=>$history]);
     }
-    public function approval(Request $request){
 
-        // Artisan::call("storage:link");
-
-        $path = Storage::disk('public')->putFile('prove',$request->file('file'));
-
-         $data = ['user_id'=> $request->user_id,'amount'=>$request->amount,"path" => $path,"trans_id"=> $request->id];
-
-         $created = Approval::create($data);
-
-         if($created){
-
-            return response()->json(["status"=>"successful",'data'=>"Payment validation sent successfully"]);
-         }
-
+    public function reinvest(){
+        $plans = Plan::get();
+        $approval = Approval::where('user_id',auth('web')->id())->get();
+        $invest = Investment::where('user_id',auth('web')->id())->get();
+        return view('user.reinvest')->with(['plans'=>$plans,'approval'=>$approval,'invest' => $invest]);
+    }
+    public function store_invest(Request $request){
        
-    }
-
-    public function package(){
-        $package = Package::get();
-        return response()->json($package);
-    }
-
-    public function activate($name){
-
-        $data = Package::where('name','=',$name)->first();
-
-        if(!$data){
-            return back()->with(['msg'=>'unrecognised plan']);
+        $path = Storage::disk('public')->putFile('approval',$request->file('file'));
+        $approval = Approval::create(['user_id'=>auth('web')->id(),'amount'=>$request->plans,'path'=>$path]);
+        if($approval){
+            return redirect()->route('user.reinvest');
         }
-
-        if(auth()->user()->wallet->amount < $data->amount){
-             return back()->with(['msg'=>'insufficient fund']);
+        return back();
+      
+    }
+    public function info(){
+        return view('user.accountinfo');
+    }
+    public function transaction(){
+        $await = AwaitingPayment::where('user_id',auth()->id())->get();
+        return view('user.transactions')->with(['await' => $await]);
+    }
+    public function store_transaction(Request $request){
+        $hist = History::where('user_id',auth()->id())->where('status',true)->first();
+        if(empty($hist)){
+             return back()->with(['msg'=>'You don\'t have a running investment at the moment']);
         }
+        $exp = strtotime($hist->expiry_date);
+        $date = strtotime('now');
 
-        $record = auth('web')->user()->wallet->amount - $data->amount;
-
-        auth('web')->user()->wallet()->update(['amount' => $record]);
-
-            $date = date("y-m-d");
-            $expire = date("y-m-d",strtotime($data->duration."days"));
-
-            $invest = Investment::create(['user_id'=>auth()->user()->id,'date'=> $date,'amount' => $data->amount,'roi'=> $data->roi,'duration'=> $data->duration,'created_at'=>$date,'expire_at'=>$expire]);
-            if($invest){
-                return back()->with(['msg' => 'investment activated successfully']);
-            }
-       
-    }
-
-    public function investment(Request $request){
-            $data = Investment::get();
-           return view("user.dashboard");
-    }
-
-    public function address(Request $request){
-
-            $addr = Address::where('user_id',$request->id)->first();
-        if($addr){
-            $address = Address::where('user_id',$request->id)->update(['address'=> $request->address]);
-
-            return response()->json(["status" => 200,"data" => $request->address]);
+        if($exp > $date){
+            return back()->with(['msg'=>'you have a running investment that will expire on '.$hist->expiry_date]);
         }else{
-            $address = Address::create(['user_id'=> $request->id,'address'=> $request->address]);
-            return response()->json(["status" => 200,"data" => $request->address]);
-        }
+
+            $await = AwaitingPayment::create([
+                'user_id' => auth('web')->id(),
+                'amount' => auth('web')->user()->investment->roi,
+                'status' => 'pending',
+                'transaction_date' => date('d-m-y h:i:sa'),
+            ]);
+            if($await){
+
+                $hist->update(['status'=>false]);
+                auth('web')->user()->investment->delete();
+                return back()->with(['msg','Payemnt request sent successfully']);
+            }
     }
+}
+    public function plans(){
+        $history = History::where('user_id',auth('web')->id())->get();
+        return view('user.referrals')->with(['history'=>$history]);
+    }
+
+    public function invested(){
+         $history = History::where('user_id',auth('web')->id())->get();
+        return view('user.plans')->with(['history'=>$history]);
+    }
+
+
+
+    public function logout(Request $request){
+        auth('web')->logout();
+        session()->regenerate();
+        session()->invalidate();
+
+        return redirect()->route('index');
+    }
+   
 
 }

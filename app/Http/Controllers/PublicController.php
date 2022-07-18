@@ -38,13 +38,7 @@ class PublicController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        if(auth()->attempt($request->only('email','password'))){
-            event(new UserRegister(auth()->id()));
-            return redirect()->route('dashboard');
-        }else{
-            return back()->with('msg','Oops something went wrong');
-        }
-
+        return redirect()->route('dashboard');
     }
 
     public function userLogin(Request $request){

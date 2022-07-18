@@ -5,12 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Package extends Model
+class History extends Model
 {
     use HasFactory;
 
-    protected $table = 'packages';
+    protected $table = 'history';
 
-    protected $fillable = ['name','amount','roi','duration','content'];
+    protected $fillable = ['user_id','plan','status','purchase_date','expiry_date'];
 
 }
