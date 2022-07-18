@@ -6,25 +6,25 @@
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Countries</h6>
-                        <p class="counter-active">250</p>
+                        <p>250</p>
                     </div>
                     <!-- End Single Counter up -->
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Business</h6>
-                        <p class="counter-active">190</p>
+                        <p>190</p>
                     </div>
                     <!-- End Single Counter up -->
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Payments</h6>
-                        <p class="counter-active">2000</p>
+                        <p>4000</p>
                     </div>
                     <!-- End Single Counter up -->
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Supports</h6>
-                        <p class="counter-active">371</p>
+                        <p>371</p>
                     </div>
                     <!-- End Single Counter up -->
                 </div>

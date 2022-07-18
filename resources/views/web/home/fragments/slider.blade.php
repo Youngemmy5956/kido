@@ -9,7 +9,7 @@
                         Through advanced trading infrastructure, super fast withdrawals, hyper speed execution and a
                         responsive chat support will facilitate your trading experience to enable you to embrace the
                         opportunities presented by the market.</p>
-                    <a class="slide__btn dg__btn btn--white btn--theme" href="#">Read More</a>
+                    <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("about")}}">Read More</a>
                 </div>
             </div>
         </div>
