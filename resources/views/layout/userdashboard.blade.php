@@ -19,7 +19,7 @@
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/salary.png') }}" alt="" class="icon"> <a href="{{ route('user.reinvest') }}" class="dashboard-links">Innvest</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/b00b3270-c001-4c1c-88be-1fa129600aff-removebg-preview.png') }}" alt="" class="icon"> <a href="{{ route('user.transaction') }}" class="dashboard-links">transactions</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/debit-card.png') }}" alt="" class="icon"><a href="{{ route('user.invested') }}" class="dashboard-links">Plans</a></div>
-            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/shiba inu.png') }}" alt="" class="icon"><a href="{{ route('user.info') }}" class="dashboard-links">Account info</a></div>   
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/shiba inu.png') }}" alt="" class="icon"><a href="{{ route('user.info') }}" class="dashboard-links">Account info</a></div>
         </aside>
 
         <div class="info-wrapper">
@@ -27,7 +27,7 @@
                 <h1 class="hello-user">hi, {{ auth('web')->user()->first_name }}</h1>
                 <div class="user-icon-container">
                     <div class="notification-icon-container">
-                        <img src="{{ asset('user/images/profile1.jpg') }}" alt="" class="user-icon ">
+                        <img src="{{ asset('user/images/th.jfif') }}" alt="" class="user-icon ">
                         <div class="profile-modal">
                             <div class="close-profile">x</div>
                             <div class="change-password">
@@ -96,4 +96,3 @@
 </body>
 </html>
 
-   
