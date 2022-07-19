@@ -3,12 +3,13 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\Plan;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Models\Approval;
-use App\Models\AwaitingPayment;
+use App\Models\Wallet;
 use App\Models\History;
+use App\Models\Approval;
 use App\Models\Investment;
+use Illuminate\Http\Request;
+use App\Models\AwaitingPayment;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Storage;
@@ -32,7 +33,8 @@ class DashboardController extends Controller
         $plans = Plan::get();
         $approval = Approval::where('user_id',auth('web')->id())->get();
         $invest = Investment::where('user_id',auth('web')->id())->get();
-        return view('user.reinvest')->with(['plans'=>$plans,'approval'=>$approval,'invest' => $invest]);
+        $wallet = Wallet::get();
+        return view('user.reinvest')->with(['plans'=>$plans,'approval'=>$approval,'invest' => $invest,'wallet' => $wallet]);
     }
     public function store_invest(Request $request){
        

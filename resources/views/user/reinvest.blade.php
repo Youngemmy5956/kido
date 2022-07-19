@@ -3,7 +3,12 @@
             <div class="page-displayer">
                 <p class="header">notice</p>
                 <div class=" overview-container animate__animated animate__bounceInDown">
-                    <p class="error-message">Purchase and upgrade your plans here.</p>
+                    @foreach($wallet as $wallets)
+                    <div class="error-message">
+                        <p>{{ $wallets->name }}</p>
+                        <p>{{ $wallets->address }} <span class="fa-solid fa-copy address" style="color:purple;margin:0.2rem"></span></p>
+                    </div>
+                    @endforeach
                 </div>
                 <p class="header">invest</p>
 
@@ -55,6 +60,19 @@
                 let err = document.querySelector('.err');
                 let file = document.querySelector(".file");
                 let main = document.querySelector(".mainframe");
+
+                //copy address
+
+                let address = document.querySelectorAll(".address");
+
+                console.log(address);
+
+                address.forEach((data) => {
+                    data.addEventListener('click',function(e){ 
+                        navigator.clipboard.writeText( e.target.parentElement.textContent);
+                        alert("wallet address has been copied to the clipboard");
+                    })
+                })
 
                 main.style.display = "none";
                 file.nextElementSibling.style.display = "none";

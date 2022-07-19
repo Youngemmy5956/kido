@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Plan;
 use App\Models\User;
 use App\Models\Admin;
-use App\Models\Plan;
+use App\Models\Wallet;
+use App\Models\History;
 use App\Models\Product;
 use App\Models\Approval;
+use App\Models\Investment;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\History;
-use App\Models\Investment;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
@@ -129,10 +130,34 @@ class AdminController extends Controller
         }
     }
 
+    public function wallet(){
+        $wallet = Wallet::get();
+        return view('admin.wallet')->with(['wallet' => $wallet]);
+    }
+
+    public function store_wallet(Request $request){
+        $wallet = Wallet::create([
+            'name' => $request->name,
+            'address' => $request->address
+        ]);
+
+        if($wallet){
+            return back();
+        }
+
+        return back()->with(['msg' => "oops something went wrong"]);
+        
+    }
+
+    public function delwallet(Wallet $wallet){
+        $wallet->delete();
+        return back();
+    }
+
     public function logout(){
         auth('admin')->logout();
-        session()->regenerateToken();
         session()->invalidate();
+        session()->regenerateToken();
         return redirect()->route('admin.login');
     }
 }

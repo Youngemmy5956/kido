@@ -75,7 +75,10 @@ Route::middleware('admin')->group(function(){
     Route::get("/admin/product/",[AdminController::class,"product"])->name("admin.product");
     Route::post("/admin/product/",[AdminController::class,"store_product"])->name("admin.product");
     Route::post("/admin/package/create",[AdminController::class,"create_package"])->name("admin.create_package");
+    Route::get("/admin/wallet",[AdminController::class,'wallet'])->name('admin.wallet');
+    Route::post('/admin/wallet',[AdminController::class,'store_wallet']);
     Route::get("admin/logout",[AdminController::class,'logout'])->name('admin.logout');
+    Route::get("admin/del/wallet/{wallet}",[AdminController::class,"delwallet"])->name("del-wallet");
 });
 
 Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");

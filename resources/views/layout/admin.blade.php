@@ -26,6 +26,7 @@
                     <li><a href="{{ route('admin.dashboard') }}">Users</a></li>
                     <li><a href="{{ route('admin.approve') }}">Payment Approvals</a></li>
                     <li><a href="{{ route('admin.package') }}">Packages</a></li>
+                    <li><a href="{{ route('admin.wallet') }}">Wallet</a></li>
                      <li><a href="{{ route('admin.register') }}">Admin</a></li>
                 </ul>
             </div>
