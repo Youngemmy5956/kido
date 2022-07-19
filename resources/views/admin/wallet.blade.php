@@ -17,6 +17,9 @@
         <th>Address</th>
         <th>remove</th>
     </tr>
+    @if(empty($wallet))
+        <p>No Data</p>
+    @else
     @foreach($wallet as $wallets)
     <tr>
         <td class="text-red-400">{{ $wallets->name }}</td>
@@ -24,6 +27,7 @@
          <td class="border"><a href="{{ route('del-wallet',['wallet' => $wallets->id ]) }}">remove</a></td>
     </tr>
     @endforeach
+    @endif
 </table>
 </div>
 @endsection

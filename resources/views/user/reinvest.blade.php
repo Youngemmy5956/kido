@@ -3,18 +3,17 @@
             <div class="page-displayer">
                 <p class="header">Wallet address </p>
                 <div class=" overview-container animate__animated animate__bounceInDown">
-<<<<<<< HEAD
+                    @if(empty($wallet))
+                        <p>NO wallet information</p>
+                    @else
                     @foreach($wallet as $wallets)
                     <div class="error-message">
                         <p>{{ $wallets->name }}</p>
                         <p>{{ $wallets->address }} <span class="fa-solid fa-copy address" style="color:purple;margin:0.2rem"></span></p>
                     </div>
                     @endforeach
-=======
-                    <p class="error-message">Purchase and upgrade your plans here.</p>
-                    <p class="error-message">Purchase and upgrade your plans here.</p>
-                    <p class="error-message">Purchase and upgrade your plans here.</p>
->>>>>>> cf44f3ed0681801f029a709446b72c299f752a99
+                    @endif
+                   
                 </div>
                 <p class="header">invest</p>
 
