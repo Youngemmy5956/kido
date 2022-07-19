@@ -3,6 +3,9 @@
     margin: 0%;
     box-sizing: border-box;
 }
+.close-btn{
+    display:none;
+}
 .mining-btn{
     height: 150px;
     width: 150px;
@@ -36,6 +39,20 @@ aside{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
+.close-btn{
+    display: none;
+    padding: 15px;
+    font-family: poppins;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
 }
 .logo-container{
     height: 20%;
@@ -103,7 +120,7 @@ aside{
 }
 .info-wrapper{
     width: 80%;
-    padding: 10px 0px 10px 0px; 
+    padding: 10px 0px 10px 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -471,7 +488,7 @@ header p{
     width: 80%;
     margin-right: auto;
     font-family: poppins,sans-serif;
-    
+
 }
 .my-plan-card-container{
     display: flex;
@@ -486,7 +503,7 @@ header p{
     margin-top: 10px;
     font-family: poppins,sans-serif;
     font-weight: 500;
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
     text-transform: uppercase;
     color: purple;
 }
@@ -643,7 +660,7 @@ header p{
     font-family: poppins;
 }
 .select-plan{
-   
+
     padding: 10px;
     font-size: 1rem;
     font-family: poppins;
@@ -682,11 +699,53 @@ option:first-of-type{
     opacity: .7;
     text-transform: capitalize;
 }
+
+.menu-container{
+    display: none;
+}
+.menu-list{
+    width: 0%;
+    overflow-x: hidden;
+}
 @media (max-width:1024px) and (min-width:768px){
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .close-btn{
+        display: block;
+        position: absolute;
+        top: 0%;
+        right: 0;
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: black;
+        margin: 3px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
 
     aside{
         width: 0px;
         overflow-x: hidden;
+        z-index: 30000;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        height: 100vh;
     }
     .info-wrapper{
         width: 100%;
@@ -698,9 +757,37 @@ option:first-of-type{
 }
 
 @media screen and (max-width: 767px){
+    .menu-container{
+        width: 60px;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .menu-line{
+        height: 4px;
+        width: 35px;
+        border-radius: 5px;
+        background-color: black;
+        margin: 3px;
+    }
+    .close-btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        margin-left: auto;
+        cursor: pointer;
+    }
     aside{
         width: 0px;
         overflow-x: hidden;
+        z-index: 3000;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        height: 100vh;
     }
     .info-wrapper{
         width: 100%;

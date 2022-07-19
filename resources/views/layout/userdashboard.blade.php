@@ -12,7 +12,9 @@
 </head>
 <body>
     <section class="dashboard-landpage">
-        <aside>
+     <aside id="menu-items">
+            {{-- <div class="close-btn" id="close-sidebar">x</div> --}}
+
             <div class="logo-container">
                 <h1>KOINBETTER</h1>
             </div>
@@ -24,7 +26,13 @@
         </aside>
 
         <div class="info-wrapper">
+
             <div class="user-info-display">
+                <div class="menu-container" id="menubar">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
                 <h1 class="hello-user">hi, {{ auth('web')->user()->first_name }}</h1>
                 <div class="user-icon-container">
                     <div class="notification-icon-container">
@@ -40,6 +48,7 @@
                             </form>
                         </div>
                     </div>
+
                     <div class="profile-icon-container">
                         <img src="{{ asset('user/images/bell_notification.gif') }}" alt="" class="user-icon notification">
                         <div class="notification-modal">
@@ -89,7 +98,24 @@
                         <img src="{{ asset('user/images/inbox.gif') }}" alt="" class="user-icon">
                     </div>
                 </div>
+                <script>
+                    // menu-bar codes
+
+                        function OpenMenubar(){
+                            const menuList=document.getElementById('menu-items');
+                            menuList.style.width='80vw';
+                        }
+                        function CloseSideBar(){
+                            const menuList=document.getElementById('menu-items');
+                            menuList.style.width='0px';
+                        }
+                        const menu=document.getElementById('menubar');
+                        menu.addEventListener('click',OpenMenubar);
+                        const sidebar=document.getElementById('close-sidebar');
+                        sidebar.addEventListener('click',CloseSideBar);
+                </script>
             </div>
+
     @yield('content')
     </div>
     </section>
