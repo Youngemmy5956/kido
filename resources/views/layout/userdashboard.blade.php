@@ -16,7 +16,7 @@
             {{-- <div class="close-btn" id="close-sidebar">x</div> --}}
 
             <div class="logo-container">
-                <h1>KOINBETTER</h1>
+               <a href="{{route("index")}}"> <h1>KOINBETTER</h1></a>
             </div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/overview.png') }}" alt="" class="icon"><a href="{{ route('user.overview') }}" class="dashboard-links">Overview</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/salary.png') }}" alt="" class="icon"> <a href="{{ route('user.reinvest') }}" class="dashboard-links">Innvest</a></div>
