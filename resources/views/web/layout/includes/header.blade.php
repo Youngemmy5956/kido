@@ -210,7 +210,8 @@
         </div>
     </div>
     <!-- Mobile Menu -->
-    <div class="mobile-menu d-block d-lg-none"></div>
+    <div class="mobile-menu d-block d-lg-none">
+        
+    </div>
     <!-- Mobile Menu -->
 </header>
-

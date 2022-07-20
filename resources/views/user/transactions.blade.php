@@ -18,19 +18,19 @@
                                 @foreach($await as $awaiting)
                                 <div class="my-plan-card">
                                     <p>{{ $awaiting->amount }}</p>
-                                </div>   
+                                </div>
                                 <div class="my-plan-card">
-                                    <p class="{{ $awaiting->status == 'pending' ? 'error':'success' }}"> {{ $awaiting->status }}</p> 
+                                    <p class="{{ $awaiting->status == 'pending' ? 'error':'success' }}"> {{ $awaiting->status }}</p>
                                 </div>
                                 <div class="my-plan-card">
                                     <p class="date">
                                         {{ $awaiting->transaction_date}}
                                     </p>
-                                
+
                                 </div>
                                 <div class="my-plan-card">
                                     <p >{{ $awaiting->agent }}</p>
-                                    
+
                                 </div>
                                 @endforeach
                                 @endif
@@ -63,7 +63,7 @@
                             <p>amount</p>
                             <p>status</p>
                             <p>purchase date</p>
-                            <p>shiba wallet id</p>
+                            <p>expiry date</p>
                         </div>
                         <div class="my-plan-card-container ">
                             <!--
@@ -74,7 +74,7 @@
                                 <p >0.34758445 shib</p>
                                 <p >0.34758445 shib</p>
                                 <p >0.34758445 shib</p>
-                            </div>   
+                            </div>
                             <div class="my-plan-card">
                                 <p class="date">
                                     paid
@@ -113,10 +113,10 @@
                                 </p>
                                 <p class="date">
                                     2022/09/04 03:20:67
-                                </p> 
+                                </p>
                             </div>
                             <div class="my-plan-card">
-                                
+
                                 <p>at3446djg4jy5f643hjdd</p>
                                 <p>at3446djg4jy5f643hjdd</p>
                                 <p>at3446djg4jy5f643hjdd</p>
