@@ -13,6 +13,7 @@
 <body>
     <section class="dashboard-landpage">
      <aside id="menu-items">
+            <div class="close-btn" id="close-sidebar">x</div>
             {{-- <div class="close-btn" id="close-sidebar">x</div> --}}
 
             <div class="logo-container">
@@ -26,6 +27,7 @@
         </aside>
 
         <div class="info-wrapper">
+
 
             <div class="user-info-display">
                 <div class="menu-container" id="menubar">
