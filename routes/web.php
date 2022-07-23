@@ -11,6 +11,13 @@ use App\Http\Controllers\Web\ContactController;
 use App\Http\Controllers\Web\WalletController;
 use App\Http\Controllers\Web\TeamController;
 use App\Http\Controllers\Web\ServiceController;
+use Illuminate\Support\Facades\Artisan;
+
+Route::get("/link/storage",function(){
+    Artisan::call("storage:link");
+
+    return "yes";
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -83,3 +90,4 @@ Route::middleware('admin')->group(function(){
 
 Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");
 Route::post("/admin/register",[AdminController::class,"register_admin"]);
+

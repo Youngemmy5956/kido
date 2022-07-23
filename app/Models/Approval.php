@@ -11,7 +11,7 @@ class Approval extends Model
 
     protected $table = 'approval';
 
-    protected $fillable = ['user_id','amount','path','trans_id'];
+    protected $fillable = ['user_id','amount','path'];
 
     public function user(){
         return $this->belongsTo(User::class);
