@@ -42,7 +42,7 @@
                                     <a href="https://wa.me/message/3SH55MT6FCWHJ1">Todays Rate</a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">About DG-Taka</a>
+                                    <a href="https://wa.me/message/3SH55MT6FCWHJ1">About KoinBetter</a>
                                 </li>
                                 <li>
                                     <a href="https://wa.me/message/3SH55MT6FCWHJ1">Privacy Policy</a>
