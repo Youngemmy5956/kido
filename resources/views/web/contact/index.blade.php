@@ -1,176 +1,177 @@
-@extends("web.layout.app")
-@section("content")
+@extends('web.layout.app')
+@section('content')
 
-<body>
-    <!-- Main wrapper -->
-    <div id="wrapper" class="wrapper">
-        <!-- Header -->
+    <body>
+        <!-- Main wrapper -->
+        <div id="wrapper" class="wrapper">
+            <!-- Header -->
 
-        <!-- Header -->
-        <!-- Start Bradcaump area -->
-        <div id="bread__image" class="ht__bradcaump__area">
-            <div class="ht__bradcaump__container">
+            <!-- Header -->
+            <!-- Start Bradcaump area -->
+            <div id="bread__image" class="ht__bradcaump__area">
+                <div class="ht__bradcaump__container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="bradcaump__inner text-center">
+                                    <h2 class="bradcaump-title">Contact With us</h2>
+                                    <nav class="bradcaump-inner">
+                                        <a class="breadcrumb-item" href="">Home</a>
+                                        <span class="brd-separetor">/</span>
+                                        <span class="breadcrumb-item active">wallet</span>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="particles-js" class="particles-js"></div>
+            </div>
+            <!-- End Bradcaump area -->
+            <!-- Start Contact Area -->
+            <section class="conact__area pt--140">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="bradcaump__inner text-center">
-                                <h2 class="bradcaump-title">Contact With us</h2>
-                                <nav class="bradcaump-inner">
-                                    <a class="breadcrumb-item" href="">Home</a>
-                                    <span class="brd-separetor">/</span>
-                                    <span class="breadcrumb-item active">wallet</span>
-                                </nav>
+                            <div class="contact__title">
+                                <img src="{{ asset('data/images/about/contact.png') }}" alt="conatct images">
+                                <h2>Get Koinbetter for your trusted investment</h2>
+                                <p>cryptocurrencies such as Bitcoin and Ethereum are launched with lofty objectives, which
+                                    may be achieved over long time horizons. While the success of any cryptocurrency project
+                                    is not assured, early investors in a crypto project that reaches its goals can be richly
+                                    rewarded over the long term.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="particles-js" class="particles-js"></div>
-        </div>
-        <!-- End Bradcaump area -->
-        <!-- Start Contact Area -->
-        <section class="conact__area pt--140">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="contact__title">
-                            <img src="{{asset('data/images/about/contact.png')}}" alt="conatct images">
-                            <h2>Get Koinbetter for your trusted investment</h2>
-                            <p>cryptocurrencies such as Bitcoin and Ethereum are launched with lofty objectives, which may be achieved over long time horizons. While the success of any cryptocurrency project is not assured, early investors in a crypto project that reaches its goals can be richly rewarded over the long term.</p>
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="google__map">
+                                <div id="googleMap"></div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="google__map">
-                            <div id="googleMap"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-12 sm__mt--40 md__mt--40">
-                        <div class="dg__contact__wrapper">
-                            <form id="contact-form" class="contact-form" action="" method="post">
-                                <div class="single-contact-form">
-                                    <span>Full Name</span>
-                                    <input type="text" name="firstname">
-                                </div>
-                                <div class="single-contact-form">
-                                    <span>Email</span>
-                                    <input type="email" name="email">
-                                </div>
-                                <div class="single-contact-form">
-                                    <span>Subject</span>
-                                    <input type="text" name="subject">
-                                </div>
-                                <div class="single-contact-form message">
-                                    <span>Message</span>
-                                    <textarea name="message"></textarea>
-                                </div>
-                                <div class="contact-btn">
-                                    <button type="submit">Submit
-                                        <span class="ti-arrow-right"></span>
-                                    </button>
-                                </div>
-                            </form>
+                        <div class="col-lg-6 col-md-12 col-12 sm__mt--40 md__mt--40">
+                            <div class="dg__contact__wrapper">
+                                <form id="contact-form" class="contact-form" action="" method="post">
+                                    <div class="single-contact-form">
+                                        <span>Full Name</span>
+                                        <input type="text" name="firstname">
+                                    </div>
+                                    <div class="single-contact-form">
+                                        <span>Email</span>
+                                        <input type="email" name="email">
+                                    </div>
+                                    <div class="single-contact-form">
+                                        <span>Subject</span>
+                                        <input type="text" name="subject">
+                                    </div>
+                                    <div class="single-contact-form message">
+                                        <span>Message</span>
+                                        <textarea name="message"></textarea>
+                                    </div>
+                                    <div class="contact-btn">
+                                        <button type="submit">Submit
+                                            <span class="ti-arrow-right"></span>
+                                        </button>
+                                    </div>
+                                </form>
 
 
 
-                            <div class="form-output">
-                                <p class="form-messege"></p>
+                                <div class="form-output">
+                                    <p class="form-messege"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <!-- End Contact Area -->
+            <!-- Start Footer Area -->
+            <div class="dgtaka__bottom">
+                <!-- Start Banner Area -->
+
+                <!-- End Banner Area -->
+
+                <!-- Footer Area -->
+
+                <!-- Footer Area -->
             </div>
-        </section>
-        <!-- End Contact Area -->
-        <!-- Start Footer Area -->
-        <div class="dgtaka__bottom">
-            <!-- Start Banner Area -->
-
-            <!-- End Banner Area -->
-
-            <!-- Footer Area -->
-
-            <!-- Footer Area -->
+            <!-- End Footer Area -->
         </div>
-        <!-- End Footer Area -->
-    </div>
-    <!-- Main wrapper -->
+        <!-- Main wrapper -->
 
-    <!-- JS Files -->
+        <!-- JS Files -->
 
-    <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
-    <script>
-        // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
+        <!-- Google Map js -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
+        <script>
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
 
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 12,
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 12,
 
-                scrollwheel: false,
+                    scrollwheel: false,
 
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(-34.397, 150.644), // New York
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(-34.397, 150.644), // New York
 
-                // How you would like to style the map.
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
 
-                    {
-                        "featureType": "all",
-                        "elementType": "all",
-                        "stylers": [{
-                                "invert_lightness": true
-                            },
-                            {
-                                "saturation": 10
-                            },
-                            {
-                                "lightness": 30
-                            },
-                            {
-                                "gamma": 0.5
-                            },
-                            {
-                                "hue": "#004fb6"
-                            }
-                        ]
-                    }
-                ]
-            };
+                        {
+                            "featureType": "all",
+                            "elementType": "all",
+                            "stylers": [{
+                                    "invert_lightness": true
+                                },
+                                {
+                                    "saturation": 10
+                                },
+                                {
+                                    "lightness": 30
+                                },
+                                {
+                                    "gamma": 0.5
+                                },
+                                {
+                                    "hue": "#004fb6"
+                                }
+                            ]
+                        }
+                    ]
+                };
 
-            // Get the HTML DOM element that will contain your map
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('googleMap');
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('googleMap');
 
-            // Create the Google Map using our element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
 
-            // Let's also add a marker while we're at it
-            var marker = new google.maps.Marker({
-                position: new google.maps.LatLng(-34.397, 150.644),
-                map: map,
-                title: 'Dcare!',
-                animation: google.maps.Animation.BOUNCE
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(-34.397, 150.644),
+                    map: map,
+                    title: 'Dcare!',
+                    animation: google.maps.Animation.BOUNCE
 
-            });
-        }
-    </script>
+                });
+            }
+        </script>
 
 
-    <script src="{{asset('data/js/active.js')}}"></script>
-</body>
+        <script src="{{ asset('data/js/active.js') }}"></script>
+    </body>
 
 
 
-</html>
-
-
+    </html>
 @endsection
