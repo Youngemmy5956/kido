@@ -163,7 +163,7 @@
 							<div class="team">
 								<div class="thumb">
 									<a href="#">
-										<img src="{{asset('data/images/team/md-img/ki8.JPG')}}" alt="team images">
+										<img src="{{asset('data/images/team/md-img/')}}" alt="team images">
 									</a>
 								</div>
 								<div class="team__content">
