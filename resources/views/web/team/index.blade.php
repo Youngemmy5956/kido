@@ -207,7 +207,7 @@
 								</div>
 								<div class="team__content">
 									<h4>
-										<a href="#">Christopher Bowman</a>
+										<a href="#">Christopher Griner</a>
 									</h4>
 									<p>Chief Human Resources Officer</p>
 									<ul class="team__share d-flex justify-content-center">
