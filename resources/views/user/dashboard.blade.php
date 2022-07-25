@@ -66,7 +66,7 @@
 
                     <h3>Available profit for withdrawl</h3>
                     <p>$5000</p>
-                    <button class="update-plan-btn">Avialble profit</button>
+                    <button class="update-plan-btn">Total profit</button>
                 </div>
             </div>
             <div class="my-plan-container">
