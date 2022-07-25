@@ -19,7 +19,7 @@
                 <p>{{ $overview->roi }}</p>
             </div>
             <div class="overview-card">
-                <h2>Balance (USDT)</h2>
+                <h2>ROI (USD)</h2>
                 <p>{{ $overview->roi }}</p>
             </div>
         </div>
