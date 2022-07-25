@@ -64,8 +64,8 @@
                 </div>
                 <div class="want-to-earn-more">
 
-                    <h3>Available profit for withdrawl</h3>
-                    <p>$5000</p>
+                    <h4 class="amount"> [Available profit for withdrawl]</h4>
+                    <h4 class="amount">$5000</h4>
                     <button class="update-plan-btn">Total profit</button>
                 </div>
             </div>
