@@ -12,7 +12,7 @@
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Business</h6>
-                        <p>190</p>
+                        <p>6</p>
                     </div>
                     <!-- End Single Counter up -->
                     <!-- Start Single Counter up -->
@@ -24,7 +24,7 @@
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Supports</h6>
-                        <p>371</p>
+                        <p>4</p>
                     </div>
                     <!-- End Single Counter up -->
                 </div>
