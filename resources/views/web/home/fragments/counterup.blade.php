@@ -18,7 +18,7 @@
                     <!-- Start Single Counter up -->
                     <div class="counterup__list">
                         <h6>Payments</h6>
-                        <p>4000</p>
+                        <p>8000</p>
                     </div>
                     <!-- End Single Counter up -->
                     <!-- Start Single Counter up -->
