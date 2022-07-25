@@ -27,19 +27,19 @@
         <div class=" overview-container animate__animated animate__bounceInDown">
             <div class="overview-card">
                 <h2>Invested (USD)</h2>
-                <p>0.00</p>
+                <p>$0.00</p>
             </div>
             <div class="overview-card">
                 <h2>Active Plan ()</h2>
-                <p>0.00</p>
+                <p>$0.00</p>
             </div>
             <div class="overview-card">
                 <h2>ROI</h2>
-                <p>0.00</p>
+                <p>%0.00</p>
             </div>
             <div class="overview-card">
-                <h2>Balance (USDT)</h2>
-                <p>0.00</p>
+                <h2>ROI (USD)</h2>
+                <p>%0.00</p>
             </div>
         </div>
         @endif
@@ -55,9 +55,9 @@
             <div class="mining-info">
                 <div class="mining-plans">
                     <div class="mining-plan-text-container">
-                        <p> [Active Plan]</p>
+                        <p> [Balance USD]</p>
                         <h2>You are on daily investment plan</h2>
-                        <h4 class="amount">24hrs</h4>
+                        <h4 class="amount">$50000</h4>
                         <button class="reset-plan-btn">Upgrade Plan</button>
                     </div>
                     <img src="" alt="">
