@@ -64,7 +64,7 @@
                 </div>
                 <div class="want-to-earn-more">
 
-                    <h3>want to earn more ?</h3>
+                    <h3>Available profit for withdrawl</h3>
                     <p>upgrade your plan and step up your earns even up to 10% interest per day </p>
                     <button class="update-plan-btn">upgrade now</button>
                 </div>
