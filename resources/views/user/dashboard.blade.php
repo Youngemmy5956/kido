@@ -58,7 +58,7 @@
                         <p> [Wallet USD]</p>
                         <h2>You are on daily investment plan</h2>
                         <h4 class="amount">$1000</h4>
-                        <button class="reset-plan-btn">Upgrade Plan</button>
+                        <button class="reset-plan-btn">Current Plan</button>
                     </div>
                     <img src="" alt="">
                 </div>
