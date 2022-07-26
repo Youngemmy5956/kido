@@ -107,6 +107,19 @@
                     </div>
                     <!-- End Single Service -->
 
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__title--6">
+                                    <h2>------------</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
