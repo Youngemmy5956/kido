@@ -58,7 +58,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section__title--6">
-                                    <h2>Our Plans</h2>
+                                    <h2>Our Profitable Plans</h2>
 
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Proficient Plan  10%</a>
+                                <a href="">Ultimate Plan  10%</a>
                             </h4>
                             <p>Min:$4000-$15000 after 24hrs</p>
                         </div>
