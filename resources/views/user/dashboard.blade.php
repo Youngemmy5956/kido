@@ -57,7 +57,7 @@
                     <div class="mining-plan-text-container">
                         <p> [Wallet USD]</p>
                         <h2>You are on daily investment plan</h2>
-                        <h4 class="amount">$1000</h4>
+                        <h4 class="amount">$0000</h4>
                         <button class="reset-plan-btn">Current Plan</button>
                     </div>
                     <img src="" alt="">
@@ -65,7 +65,7 @@
                 <div class="want-to-earn-more">
 
                     <h4 class="amount"> [Available profit for withdrawl]</h4>
-                    <h4 class="amount">$5000</h4>
+                    <h4 class="amount">$0000</h4>
                     <button class="update-plan-btn">Total profit</button>
                 </div>
             </div>
