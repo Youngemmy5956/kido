@@ -72,7 +72,7 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Rookie Plan</a>
+                                <a href="">Rookie Plan 2%</a>
                             </h4>
                             <p>Min:$100-$900 after 24hrs</p>
                         </div>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Proficient Plan</a>
+                                <a href="">Proficient Plan  4%</a>
                             </h4>
                             <p>Min:$1000-$3000 after 24hrs</p>
                         </div>
@@ -100,7 +100,7 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Proficient Plan</a>
+                                <a href="">Proficient Plan  10%</a>
                             </h4>
                             <p>Min:$4000-$15000 after 24hrs</p>
                         </div>
