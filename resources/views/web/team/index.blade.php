@@ -120,7 +120,7 @@
 						</div>
 						<!-- End Single Team -->
 						<!-- Start Single Team -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+						{{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="team">
 								<div class="thumb">
 									<a href="#">
@@ -156,7 +156,7 @@
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 						<!-- End Single Team -->
 						<!-- Start Single Team -->
 						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
@@ -198,7 +198,7 @@
 						</div>
 						<!-- End Single Team -->
 						<!-- Start Single Team -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+						{{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="team">
 								<div class="thumb">
 									<a href="#">
@@ -234,10 +234,10 @@
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 						<!-- End Single Team -->
 						<!-- Start Single Team -->
-						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
+						{{-- <div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="team">
 								<div class="thumb">
 									<a href="#">
@@ -273,7 +273,7 @@
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 						<!-- End Single Team -->
 					</div>
 				</div>
