@@ -75,6 +75,7 @@
                                 <a href="">Rookie Plan 2%</a>
                             </h4>
                             <p>Min:$100-$900 after 24hrs</p>
+                            <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -89,6 +90,7 @@
                                 <a href="">Proficient Plan  4%</a>
                             </h4>
                             <p>Min:$1000-$3000 after 24hrs</p>
+                            <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
                     <!-- End Single Service -->
@@ -103,9 +105,11 @@
                                 <a href="">Ultimate Plan  10%</a>
                             </h4>
                             <p>Min:$4000-$15000 after 24hrs</p>
+                            <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
                     <!-- End Single Service -->
+
 
 
 
