@@ -107,7 +107,6 @@
                     </div>
                     <!-- End Single Service -->
 
-
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12">
@@ -118,6 +117,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Start Single Service -->
                     <div class="service__2">
                         <div class="icon">
