@@ -20,7 +20,7 @@
                <a href="{{route("index")}}"> <h1>KOINBETTER</h1></a>
             </div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/overview.png') }}" alt="" class="icon"><a href="{{ route('user.overview') }}" class="dashboard-links">Overview</a></div>
-            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/salary.png') }}" alt="" class="icon"> <a href="{{ route('user.reinvest') }}" class="dashboard-links">Innvest</a></div>
+            <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/salary.png') }}" alt="" class="icon"> <a href="{{ route('user.reinvest') }}" class="dashboard-links">Invest</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/b00b3270-c001-4c1c-88be-1fa129600aff-removebg-preview.png') }}" alt="" class="icon"> <a href="{{ route('user.transaction') }}" class="dashboard-links">transactions</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/debit-card.png') }}" alt="" class="icon"><a href="{{ route('user.invested') }}" class="dashboard-links">Plans</a></div>
             <div class="link-container"><div class="bar"></div><img src="{{ asset('user/images/shiba inu.png') }}" alt="" class="icon"><a href="{{ route('user.info') }}" class="dashboard-links">Account info</a></div>
