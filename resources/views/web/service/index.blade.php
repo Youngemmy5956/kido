@@ -51,18 +51,19 @@
         <!-- End Secure Transaction Area -->
         <!-- Start Service Area  -->
         <section class="dg__service__area pb--140">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section__title--6">
-                            <h2>Our Services</h2>
-                            <p>KOINBETTER a cryptocurrency partners which has been I identified with the test of time, thoroughly over the past 5 years and they are the most dynamically developing institutional firm in the cryptocurrency assets, the firm taking it stand as a mandate before 2025,to become the next global giant in the circulation market.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="space__dec">
                 <div class="custom__service__width">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__title--6">
+                                    <h2>Our Plans</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                      <!-- Start Single Service -->
                      <div class="service__2">
@@ -105,6 +106,18 @@
                         </div>
                     </div>
                     <!-- End Single Service -->
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="section__title--6">
+                                    <h2>Our Services</h2>
+                                    <p>KOINBETTER a cryptocurrency partners which has been I identified with the test of time, thoroughly over the past 5 years and they are the most dynamically developing institutional firm in the cryptocurrency assets, the firm taking it stand as a mandate before 2025,to become the next global giant in the circulation market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Start Single Service -->
                     <div class="service__2">
                         <div class="icon">
