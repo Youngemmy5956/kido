@@ -1,0 +1,33 @@
+{
+    "hooks": {
+        "status": "active",
+        "commands": [
+            {
+                "name": "Run migration",
+                "command": "php artisan migrate",
+                "type": "pre_deployment",
+                "execute": false
+            },
+            {
+                "name": "Run storage link",
+                "command": "php artisan storage:link",
+                "type": "post_deployment",
+                "execute": false
+            }
+        ]
+    },
+    "storage": {
+        "paths": [
+            {
+                "path": "A directory or file you want to update or push to the server after deployment. e.g storage/my_template/folder",
+                "action": "update",
+                "execute": false
+            },
+            {
+                "path": "A directory or file you want to delete after the deployment is complete e.g storage/logs/laravel.log",
+                "action": "delete",
+                "execute": false
+            }
+        ]
+    }
+}

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf14086919a839fe740e00554e4baff6",
+    "content-hash": "221d5abc00f159b8bd426b159bed736f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5190,6 +5190,67 @@
             "time": "2022-03-02T12:42:23+00:00"
         },
         {
+            "name": "techies-africa/devpilot_laravel",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Techies-Africa/devpilot_laravel.git",
+                "reference": "42e93d067268031f681b81c83f2eefe2dd1759c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Techies-Africa/devpilot_laravel/zipball/42e93d067268031f681b81c83f2eefe2dd1759c5",
+                "reference": "42e93d067268031f681b81c83f2eefe2dd1759c5",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.2|^8.0",
+                "symfony/console": "^4.3|^5.0|^6.0",
+                "symfony/process": "^4.3|^5.0|^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "TechiesAfrica\\Devpilot\\Providers\\DevpilotServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TechiesAfrica\\Devpilot\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Confidence Ugolo",
+                    "email": "ugoloconfidence@gmail.com"
+                }
+            ],
+            "description": "Official laravel client for Devpilot",
+            "keywords": [
+                "autodeploy",
+                "ci cd",
+                "deploy",
+                "deployments",
+                "devpilot",
+                "laravel",
+                "ssh",
+                "techies africa"
+            ],
+            "support": {
+                "issues": "https://github.com/Techies-Africa/devpilot_laravel/issues",
+                "source": "https://github.com/Techies-Africa/devpilot_laravel/tree/1.0.9"
+            },
+            "time": "2022-05-26T11:29:53+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.4",
             "source": {
@@ -7972,5 +8033,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
