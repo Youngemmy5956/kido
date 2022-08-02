@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Models\APW;
 use App\Models\Plan;
 use App\Models\Wallet;
 use App\Models\History;
@@ -20,6 +21,13 @@ class DashboardController extends Controller
     public function index(){
       $overview = Investment::where('user_id',auth('web')->id())->first();
         $history = History::where('user_id',auth('web')->id())->get();
+
+        if(empty(APW::where("user_id",auth()->id())->first())){
+            APW::create(
+            ["user_id" => auth()->id()]
+             );
+        }
+       
        return view("user.dashboard")->with(['overview'=>$overview,'history'=>$history]);
     }
 

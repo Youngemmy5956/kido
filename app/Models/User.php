@@ -50,4 +50,8 @@ class User extends Authenticatable
     public function address(){
         return $this->hasOne(Address::class);
     }
+
+    public function apw(){
+        return $this->hasOne(APW::class);
+    }
 }

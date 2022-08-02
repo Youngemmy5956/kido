@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\APW;
 use App\Models\Plan;
 use App\Models\User;
 use App\Models\Admin;
@@ -159,5 +160,21 @@ class AdminController extends Controller
         session()->invalidate();
         session()->regenerateToken();
         return redirect()->route('admin.login');
+    }
+
+    public function apw(User $user){
+        return view("admin.apw")->with(["id"=>$user->id]);
+    }
+
+    public function store_apw(Request $request){
+
+
+        $apw = APW::where("user_id",$request->user_id)->first()->update(["amount"=>$request->amount]);
+
+        if($apw){
+            return back()->with(["msg"=>"Update amount successfully"]);
+        }else{
+            return back()->with(["msg"=>"Oops something went wrong"]);
+        }
     }
 }

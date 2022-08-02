@@ -6,7 +6,7 @@
                     <tr class="mx-6 mb-4">
                         <th>Name</th>
                         <th>email</th>
-                        <th>remove</th>
+                        <th>view</th>
                     </tr>
                     @foreach($users as $user)
                     <tr class="m-6">
@@ -17,7 +17,7 @@
                             {{ $user->email }}
                         </td>
                         <td>
-                            <a href="#" class="bg-red-500 text-white p-4">Remove</a>
+                            <a href="{{ route('admin.apw',['user'=>$user->id]) }}" class="bg-gray-700 text-black p-4">view</a>
                         </td>
                     </tr>
                     @endforeach

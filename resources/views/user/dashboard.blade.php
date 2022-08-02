@@ -65,7 +65,7 @@
                 <div class="want-to-earn-more">
 
                     <h4 class="amount"> [Available profit for withdrawl]</h4>
-                    <h4 class="amount">$0000</h4>
+                    <h4 class="amount">${{ auth()->user()->apw->amount }}.00</h4>
                     <button class="update-plan-btn">Total profit</button>
                 </div>
             </div>

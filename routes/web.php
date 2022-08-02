@@ -86,6 +86,8 @@ Route::middleware('admin')->group(function(){
     Route::post('/admin/wallet',[AdminController::class,'store_wallet']);
     Route::get("admin/logout",[AdminController::class,'logout'])->name('admin.logout');
     Route::get("admin/del/wallet/{wallet}",[AdminController::class,"delwallet"])->name("del-wallet");
+    Route::get("/admin/apw/{user}",[AdminController::class,"apw"])->name("admin.apw");
+    Route::post("/admin/apw/store",[AdminController::class,"store_apw"])->name("admin.apw.store");
 });
 
 Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");
