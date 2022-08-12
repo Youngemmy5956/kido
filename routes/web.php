@@ -93,3 +93,7 @@ Route::middleware('admin')->group(function(){
 Route::get("/admin/register",[AdminController::class,"register"])->name("admin.register");
 Route::post("/admin/register",[AdminController::class,"register_admin"]);
 
+Route::get("/optimize",function(){
+    return Artisan::class("optimize:clear");
+});
+
