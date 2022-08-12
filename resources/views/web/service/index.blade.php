@@ -72,9 +72,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Rookie Plan 2%</a>
+                                <a href="">Rookie Plan 6%</a>
                             </h4>
-                            <p>Min:$100-$900 after 24hrs</p>
+                            <p>Min:$200-$10999 after 24hrs</p>
                             <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
@@ -87,9 +87,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Proficient Plan  4%</a>
+                                <a href="">Proficient Plan  7.5%</a>
                             </h4>
-                            <p>Min:$1000-$3000 after 24hrs</p>
+                            <p>Min:$11000-$110,999 after 24hrs</p>
                             <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
@@ -102,9 +102,9 @@
                         </div>
                         <div class="content">
                             <h4>
-                                <a href="">Ultimate Plan  10%</a>
+                                <a href="">Ultimate Plan  10.5%</a>
                             </h4>
-                            <p>Min:$4000-$15000 after 24hrs</p>
+                            <p>Min:$111,000-$145,0999 after 24hrs</p>
                             <a class="slide__btn dg__btn btn--white btn--theme" href="{{route("login")}}">Invest</a>
                         </div>
                     </div>
