@@ -94,6 +94,6 @@ Route::get("/admin/register",[AdminController::class,"register"])->name("admin.r
 Route::post("/admin/register",[AdminController::class,"register_admin"]);
 
 Route::get("/optimize",function(){
-    return Artisan::class("optimize:clear");
+   return Artisan::call("optimize:clear");
 });
 
